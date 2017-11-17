@@ -1,0 +1,228 @@
+.section1 {
+    height: 380rpx;
+    position: relative;
+    background: url(https://match.steampp.com/mobile/static/wx/account/accountbg.jpg) no-repeat center bottom;
+    background-size: 800rpx;
+}
+
+.signPart {
+    position: absolute;
+    top: 20rpx;
+    left: 20.5rpx;
+}
+
+.signPart .signed {
+    padding: 4rpx;
+    width: 50rpx;
+    height: 48rpx;
+    background: url(https://match.steampp.com/mobile/static/wx/account/sign.png) no-repeat center center;
+    background-size: 50rpx 48rpx;
+}
+
+.signPart .noSign{
+    background-image: url(https://match.steampp.com/mobile/static/wx/account/sign0.png);
+}
+
+.signPart .date {
+    color: #fff;
+    font-size: 24rpx;
+    text-align: center;
+    font-weight: blod;
+    line-height: 56rpx;
+}
+
+.accountPart {
+    width: 240rpx;
+    margin: 0 auto ;
+    padding-top: 28rpx;
+}
+
+.accountPart .photo {
+    width: 180rpx;
+    height: 180rpx;
+    margin: 0 auto;
+    position: relative;
+}
+
+.photo image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.photo .setting {
+    position: absolute;
+    width: 56rpx;
+    height: 56rpx;
+    background: url(https://match.steampp.com/mobile/static/wx/account/accountSetting.png) no-repeat center center;
+    background-size: 56rpx;
+    top: 0;
+    right: 0;
+}
+
+.name {
+  height: 46rpx;
+  line-height: 46rpx;
+  text-align: center;
+  font-size: 26rpx;
+  font-weight: bold;
+  margin-top: 8rpx;
+}
+
+.level {
+  height: 44rpx;
+  line-height: 44rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #fff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.msgPart {
+  background: url(https://match.steampp.com/mobile/static/wx/account/accountMsg.png) no-repeat center center;
+  width: 45rpx;
+  height: 45rpx;
+  padding: 4rpx;
+  background-size: 45rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 20.5rpx;
+}
+
+
+.section2 {
+  width: 96%;
+  padding: 0 2%;
+  height: 312rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section2 .item {
+  width: 208.5rpx;
+  height: 264rpx;
+  box-sizing: border-box;
+  padding: 15rpx;
+  border-radius: 12.5rpx;
+  background: #fff;
+  font-size: 26rpx;
+  text-align: center;
+}
+
+.section2 .item .fontColor4 {
+  height: 41.7rpx;
+  line-height: 41.7rpx;
+}
+
+.section2 .item .itemBg {
+  width: 104rpx;
+  height: 106rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/accountTransf.png) no-repeat center center;
+  background-size: 100rpx;
+  margin: 0 auto 5rpx;
+}
+
+.section2 .item:nth-child(2) .itemBg {
+  background-image: url(https://match.steampp.com/mobile/static/wx/account/accountStore.png);
+}
+.section2 .item:nth-child(3) .itemBg {
+  background-image: url(https://match.steampp.com/mobile/static/wx/account/accountRecharge.png);
+}
+
+.section2 .item .fontColor2 {
+  height: 51rpx;
+  line-height: 51rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.section3{
+  padding-bottom: 20rpx;
+}
+.section3 .item {
+  height: 104rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/arrowR.png) no-repeat 680rpx center;
+  background-size: 18rpx;
+  background-color: #fff;
+}
+.section3 .itemIn {
+  height: 104rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/accountEarnings.png) no-repeat 30rpx center;
+  background-size: 50rpx;
+  font-size: 30rpx;
+  line-height: 104rpx;
+  text-indent: 98rpx;
+}
+.section3 .item:nth-of-type(2) .itemIn{
+  background-image: url(https://match.steampp.com/mobile/static/wx/account/accountGuess.png)
+}
+.section3 .item:nth-of-type(3) .itemIn{
+  background-image: url(https://match.steampp.com/mobile/static/wx/account/accountRecommend.png)
+}
+.section3 .item:nth-of-type(4) .itemIn{
+  background-image: url(https://match.steampp.com/mobile/static/wx/account/accountAssets.png)
+}
+.section3 .item:nth-of-type(6) .itemIn{
+  background-image: url(https://match.steampp.com/mobile/static/wx/account/accountQuestion.png)
+}
+
+.section3 .item:last-child {
+  margin-top: 16rpx;
+}
+
+.signAlert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, .4);
+}
+
+.signAlert .in {
+  width: 556rpx;
+  height: 556rpx;
+  margin: 300rpx auto;
+  text-align: center;
+  border-radius: 14rpx;
+}
+.signAlert .top {
+  width: 100%;
+  height: 254rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/signedAlert.jpg) no-repeat center center;
+  background-size: cover;
+}
+.signAlert .bottom {
+  background: #fff;
+  height: 302rpx;
+}
+
+.signAlert .bottom view:nth-child(1){
+  width: 100%;
+  color: #ee6a0e;
+  font-size: 41rpx;
+  font-weight: bold;
+  height: 110rpx;
+  line-height: 110rpx;
+  padding-top: 10rpx;
+}
+.signAlert .bottom view:nth-child(2){
+  font-size: 33rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  margin: 20rpx auto;
+}
+.signAlert .bottom view:nth-child(3){
+  font-size: 35rpx;
+  height: 65rpx;
+  line-height: 62rpx;
+  width: 236rpx;
+  color: #fff;
+  margin: 10rpx auto;
+  border-radius: 33rpx;
+}

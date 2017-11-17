@@ -1,0 +1,72 @@
+.overfl {
+  overflow: hidden;
+}
+.textOverfl {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.clearFloat::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  clear: both;
+}
+.wrap {
+  width: 98%;
+  margin: 0 auto;
+}
+.common-header {
+  width: 100%;
+  height: 96rpx;
+  line-height: 96rpx;
+  font-size: 31rpx;
+  z-index : 100;
+  border-bottom: 0.7rpx solid #edf2f5;
+  text-align: center;
+}
+.common-header .backBtn {
+  position: absolute;
+  width: 70rpx;
+  height: 96rpx;
+  top: 0;
+  left: 30rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/arrowLeft.png) no-repeat center center;
+  background-size: 36rpx;
+}
+
+.item {
+  height: 104rpx;
+  line-height: 104rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/arrowR.png) no-repeat 680rpx center;
+  background-size: 18rpx;
+  background-color: #fff;
+}
+.fontColor1 {
+  color: #28292f;
+}
+.fontColor2 {
+  color: #5d5f68;
+}
+.fontColor3 {
+  color: #9da0a5;
+}
+.fontColor4 {
+  color: #bbc5cd;
+}
+.fontGold {
+  color: #ffb300;
+}
+.btnColor {
+  background-color: #ffc63f;
+}
+.borGold{
+  border-color: #ffc63f;
+}
+.bgColor {
+  background-color: #edf2f5;
+}
+.borderCol {
+  border-color: #edf2f5;
+}

@@ -1,0 +1,68 @@
+<view class="section1">
+  <view class='signPart' bindtap='tapSign'>
+    <view class='signed {{ signCheck ? "" : "noSign"}}'>
+      <view class='date' wx:if="{{ !signCheck }}">{{date}}</view>
+    </view>
+  </view>
+  <view class='accountPart'>
+    <view class='photo'>
+      <image src="{{ accountInfo.photo }}"></image>
+      <view class='setting'></view>
+    </view>
+    <view class='name fontColor1 overfl textOverfl'>{{ accountInfo.name }}</view>
+    <view class='level' style="background-image:url({{ accountInfo.levelBg }})">{{ accountInfo.level }}</view>
+  </view>
+  <view class='msgPart'></view>
+</view>
+
+<view class='section2 bgColor'>
+  <view class='item'>
+    <view class="fontColor4">账户碎银</view>
+    <view class='fontColor2 overfl textOverfl'>{{ accountInfo.silver }}</view>
+    <view class='itemBg'></view>
+    <view class="fontColor4">兑换</view>
+  </view>
+  <view class='item'>
+    <view class="fontColor4">VIP库存</view>
+    <view class='fontColor2 overfl textOverfl'>{{ accountInfo.VIPprops }}</view>
+    <view class='itemBg'></view>
+    <view class="fontColor4">存取</view>
+  </view>
+  <view class='item'>
+    <view class="fontColor4">账户赏金</view>
+    <view class='fontColor2 overfl textOverfl'>{{ accountInfo.gold }}</view>
+    <view class='itemBg'></view>
+    <view class="fontColor4">充值</view>
+  </view>
+</view>
+
+
+<view class='section3 bgColor'>
+  <view class='item'>
+    <view class='itemIn fontColor2'>我的收益</view>
+  </view>
+  <view class='item'>
+    <view class='itemIn fontColor2'>我的竞猜</view>
+  </view>
+  <view class='item'>
+    <view class='itemIn fontColor2'>我的推荐</view>
+  </view>
+  <view class='item'>
+    <view class='itemIn fontColor2'>资产摘要</view>
+  </view>
+  <view class='item'>
+    <view class='itemIn fontColor2'>常见问题</view>
+  </view>
+</view>
+
+<!-- 签到层  -->
+<view class='signAlert' hidden='{{ !signIn }}'>
+  <view class="in overfl ">
+    <view class='top'></view>
+    <view class='bottom'>
+      <view>签到成功</view>
+      <view class="fontColor3">今日签到获得 <span class="fontGold">{{ getSilver }} </span>碎银</view>
+      <view class='btnColor' bindtap='signed'>朕知道了</view>
+    </view>
+  </view>
+</view>

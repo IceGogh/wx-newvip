@@ -1,0 +1,40 @@
+<view class="common-header">
+  <view class='backBtn'></view>
+  个人设置
+</view>
+<view class='section bgColor'>
+  <view class='item fontColor2' bindtap='camera'>
+    我的头像
+    <image src="{{ accountInfo.photo }}"></image>
+  </view>
+  <view class='item fontColor2'>
+    我的昵称
+    <view class='name overfl textOverfl fontColor1'>{{ accountInfo.name }}</view>
+  </view>
+  <view class='item fontColor2'>
+    个性签名
+  </view>
+  <view class='item fontColor2'>
+    资料认证
+  </view>
+  <view class='item fontColor2'>
+    修改密码
+  </view>
+</view>
+<view class='signOut fontColor1'>退出登录</view>
+
+<!-- 上传图片选定  -->
+<view class='chooseImg' hidden="{{ newPhoto === '' ? true : false }}">
+  <view class='ImgBox overfl'>
+    <image src='{{ newPhoto }}'></image>
+    <view class="ImgBoxCheck">
+      <view class='bg'></view>
+      <view class='ImgBoxCheckBox'></view>
+      <view class='bg'></view>
+    </view>
+  </view>
+  <view class='btnArea overfl fontColor2'>
+    <view class='cancle'>取消</view>
+    <view class='confirm'>确定</view>
+  </view>
+</view>
