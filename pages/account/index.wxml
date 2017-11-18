@@ -5,7 +5,7 @@
     </view>
   </view>
   <view class='accountPart'>
-    <view class='photo'>
+    <view class='photo' bindtap='jumpToSetting'>
       <image src="{{ accountInfo.photo }}"></image>
       <view class='setting'></view>
     </view>

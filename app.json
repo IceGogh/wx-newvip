@@ -1,11 +1,15 @@
 {
   "pages":[
-    "pages/account/accountSetting/index",
-    "pages/account/accountChoosePhoto/index", 
+    
     "pages/match/index",
     "pages/roll/index",
     "pages/bag/index",
-    "pages/account/index"
+    "pages/account/index",
+    "pages/account/accountSetting/index",
+    "pages/account/changeName/index",
+    "pages/account/changeSignature/index",
+    "pages/account/changePassword/index"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -20,7 +24,7 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/account/accountSetting",
+        "pagePath": "pages/match/index",
         "iconPath": "static/image/matchIcon.png",
         "selectedIconPath": "static/image/matchSelect.png",
         "text": "竞猜",

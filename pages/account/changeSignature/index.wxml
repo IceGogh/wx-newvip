@@ -1,0 +1,12 @@
+<view class="common-header">
+  <view class='backBtn' bindtap='goBack'></view>
+  个性签名
+</view>
+<view class='keyin'>
+  <input type="text" value="{{ signature }}" maxlength='100' bindinput="keySignature"/>
+  <!-- <view class='close' bindtap='clearName'></view> -->
+  <view class='limit fontColor3'>
+    <span>{{ leng }}</span>/100
+  </view>
+</view>
+<view class='saveChange btnColor' bindtap='saveName'>保存</view>

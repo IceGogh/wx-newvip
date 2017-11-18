@@ -31,7 +31,7 @@
   width: 70rpx;
   height: 96rpx;
   top: 0;
-  left: 30rpx;
+  left: 14rpx;
   background: url(https://match.steampp.com/mobile/static/wx/account/arrowLeft.png) no-repeat center center;
   background-size: 36rpx;
 }

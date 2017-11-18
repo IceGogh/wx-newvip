@@ -1,0 +1,12 @@
+<view class="common-header">
+  <view class='backBtn' bindtap='goBack'></view>
+  修改昵称
+</view>
+<view class='keyin'>
+  <input type="text" focus="{{ autoFocus }}" value="{{ name }}" maxlength='8' bindinput="keyName"/>
+  <view class='close' bindtap='clearName'></view>
+  <view class='limit fontColor3'>
+    <span>{{ leng }}</span>/8
+  </view>
+</view>
+<view class='saveChange btnColor' bindtap='saveName'>保存</view>

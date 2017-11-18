@@ -1,5 +1,5 @@
 <view class="common-header">
-  <view class='backBtn'></view>
+  <view class='backBtn' bindtap='goBack'></view>
   个人设置
 </view>
 <view class='section bgColor'>
@@ -7,24 +7,25 @@
     我的头像
     <image src="{{ accountInfo.photo }}"></image>
   </view>
-  <view class='item fontColor2'>
+  <view class='item fontColor2' bindtap='jumpToChangeName'>
     我的昵称
     <view class='name overfl textOverfl fontColor1'>{{ accountInfo.name }}</view>
   </view>
-  <view class='item fontColor2'>
+  <view class='item fontColor2' bindtap='jumpToChangeSignature'>
     个性签名
+    <view class='name signature overfl textOverfl fontColor1'>{{ accountInfo.signature }}</view>
   </view>
   <view class='item fontColor2'>
     资料认证
   </view>
-  <view class='item fontColor2'>
+  <view class='item fontColor2' bindtap='jumpToChangePassword'>
     修改密码
   </view>
 </view>
 <view class='signOut fontColor1'>退出登录</view>
 
 <!-- 上传图片选定  -->
-<view class='chooseImg' hidden="{{ newPhoto === '' ? true : false }}">
+<view class='chooseImg' hidden="{{ choosePhoto }}">
   <view class='ImgBox overfl'>
     <image src='{{ newPhoto }}'></image>
     <view class="ImgBoxCheck">
@@ -34,7 +35,7 @@
     </view>
   </view>
   <view class='btnArea overfl fontColor2'>
-    <view class='cancle'>取消</view>
-    <view class='confirm'>确定</view>
+    <view class='cancle' bindtap='cancleCamera'>取消</view>
+    <view class='confirm' bindtap='confirmCamera'>确定</view>
   </view>
 </view>
