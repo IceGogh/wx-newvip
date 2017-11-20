@@ -8,12 +8,15 @@
     "pages/account/accountSetting/index",
     "pages/account/changeName/index",
     "pages/account/changeSignature/index",
-    "pages/account/changePassword/index"
+    "pages/account/changePassword/index",
+    "pages/account/perfectInfo/index",
+    "pages/account/setPhone/index",
+    "pages/account/setEmail/index"
     
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "black",
+    "navigationBarBackgroundColor": "#000000",
     "navigationBarTitleText": "VipGame",
     "enablePullDownRefresh": false
   },

@@ -32,15 +32,3 @@ input {
   right: 0;
   font-size: 32rpx;
 }
-
-.saveChange {
-  width: 611rpx;
-  height: 84rpx;
-  line-height: 84rpx;
-  color: #fff;
-  font-size: 34rpx;
-  text-align: center;
-  border-radius: 42rpx;
-  box-shadow: 0 0 1rpx 1rpx #ffc63f;
-  margin: 100rpx auto;
-}

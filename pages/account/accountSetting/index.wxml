@@ -15,7 +15,7 @@
     个性签名
     <view class='name signature overfl textOverfl fontColor1'>{{ accountInfo.signature }}</view>
   </view>
-  <view class='item fontColor2'>
+  <view class='item fontColor2' bindtap='jumpToPerfectInfo'>
     资料认证
   </view>
   <view class='item fontColor2' bindtap='jumpToChangePassword'>

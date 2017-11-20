@@ -1,0 +1,22 @@
+<view class="common-header">
+  <view class='backBtn' bindtap='goBack'></view>
+  手机绑定
+</view>
+
+<view class='keyin keyin0 fontColor3'>
+  手机号码
+  <input class='value fontColor1' value="{{ accountInfo.phone }}" maxlength='11' minlength='11' bindinput="keyin"></input>
+  <view class='eyes {{ keyInVerify ? "eyes2" : "" }}'></view>
+</view>
+<view class='keyin fontColor3'>
+  验证码
+  <input class='value valueCode fontColor1 overfl textOverfl' value=""></input>
+  <view class='codeBox'>
+    <view class="{{ gettingCodeStatus ? 'getCoding' : 'pendingCode' }}" bindtap='getCode'>
+      {{ getCode }}
+      <view class="sec" hidden='{{ !gettingCodeStatus }}'>s</view>
+    </view>
+  </view>
+</view>
+
+<view class='SaveBtn'>确定</view>

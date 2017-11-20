@@ -73,6 +73,14 @@ Page({
     })
   },
 
+  // 跳转到 [修改密码] 页面
+  jumpToPerfectInfo: function () {
+    wx.navigateTo({
+      url: '../perfectInfo/index'
+    })
+  },
+
+  
   // 页面后退
   goBack: function(){
     wx.navigateBack({

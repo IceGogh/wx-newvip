@@ -9,4 +9,4 @@
     <span>{{ leng }}</span>/100
   </view>
 </view>
-<view class='saveChange btnColor' bindtap='saveName'>保存</view>
+<view class='SaveBtn' bindtap='saveName'>保存</view>

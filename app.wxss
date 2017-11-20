@@ -1,10 +1,17 @@
+/* 超出隐藏  */
 .overfl {
   overflow: hidden;
 }
+/* 文本超出省略号显示  */
 .textOverfl {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+/* 隐藏模块  */
+.None {
+  display: none!important;
+}
+/* 清浮动  */
 .clearFloat::after {
   content: '';
   display: block;
@@ -17,6 +24,22 @@
   width: 98%;
   margin: 0 auto;
 }
+
+/* 保存按钮  */
+.SaveBtn {
+  width: 611rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  color: #fff;
+  font-size: 34rpx;
+  text-align: center;
+  border-radius: 42rpx;
+  box-shadow: 0 0 1rpx 1rpx #ffc63f;
+  margin: 100rpx auto;
+  background: #ffc63f;
+}
+
+/* 公共头部  */
 .common-header {
   width: 100%;
   height: 96rpx;
@@ -25,7 +48,10 @@
   z-index : 100;
   border-bottom: 0.7rpx solid #edf2f5;
   text-align: center;
+  background: #fff;
 }
+
+/* 返回上一页 按钮  */
 .common-header .backBtn {
   position: absolute;
   width: 70rpx;
@@ -36,13 +62,31 @@
   background-size: 36rpx;
 }
 
+/* 统一格式 item  */
 .item {
   height: 104rpx;
   line-height: 104rpx;
-  background: url(https://match.steampp.com/mobile/static/wx/account/arrowR.png) no-repeat 680rpx center;
+  background: url(https://match.steampp.com/mobile/static/wx/account/arrowR.png) no-repeat 700rpx center;
   background-size: 18rpx;
   background-color: #fff;
 }
+
+/* input 框 输入值前端验证 eyes 样式  */
+.eyes {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(https://match.steampp.com/mobile/static/wx/account/accountEyes2.png) no-repeat center center;
+  background-size: 38rpx;
+}
+
+.eyes2 {
+  background-image: url(https://match.steampp.com/mobile/static/wx/account/accountEyes.png);
+}
+
+/* 设计稿 定义 字体色号/背景色  */
 .fontColor1 {
   color: #28292f;
 }

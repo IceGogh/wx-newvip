@@ -36,6 +36,8 @@ App({
   },
 
   globalData: {
-    userInfo: null
+    userInfo: null,
+    cc: '2223'
   }
+  
 })

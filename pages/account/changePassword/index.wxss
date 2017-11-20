@@ -21,28 +21,4 @@ input {
   width: 70%;
 }
 
-.eyes {
-  width: 60rpx;
-  height: 60rpx;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: url(https://match.steampp.com/mobile/static/wx/account/accountEyes2.png) no-repeat center center;
-  background-size: 38rpx;
-}
 
-.eyes2 {
-  background-image: url(https://match.steampp.com/mobile/static/wx/account/accountEyes.png);
-}
-
-.saveChange {
-  width: 611rpx;
-  height: 84rpx;
-  line-height: 84rpx;
-  color: #fff;
-  font-size: 34rpx;
-  text-align: center;
-  border-radius: 42rpx;
-  box-shadow: 0 0 1rpx 1rpx #ffc63f;
-  margin: 100rpx auto;
-}

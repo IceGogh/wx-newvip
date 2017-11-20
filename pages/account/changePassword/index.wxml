@@ -17,4 +17,4 @@
   <input type="password"  value="{{ newPw2 }}" maxlength='16' bindinput="psCheck3"/>
   <view class='eyes {{ eyesCheck3 ? "eyes2" : "" }}'></view>
 </view>
-<view class='saveChange btnColor' bindtap='saveChange'>保存</view>
+<view class='SaveBtn' bindtap='saveChange'>保存</view>

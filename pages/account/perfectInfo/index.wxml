@@ -1,0 +1,34 @@
+<view class="common-header {{ perfectInfoStatus === '领取后' ? '' : 'common-headerPre' }}">
+  <view class='backBtn {{ perfectInfoStatus === "领取后" ? "" : "backBtnPre" }}' bindtap='goBack'></view>
+  资料认证
+</view>
+<view class='banner {{ perfectInfoStatus === "领取后" ? "None" : "" }}'>
+  <view class='{{ perfectInfoStatus === "未完善" ? "pendingPerfect" : ( perfectInfoStatus === "已完善" ? "perfected" : ( perfectInfoStatus === "领取成功" ? "pickUp" : "afterRec") )}}'>{{ perfectInfoStatusWords }}</view>
+</view>
+
+<view class='section1 {{ perfectInfoStatus === "领取后" ? "None" : "" }}'>
+  <view wx:for="{{ accessories }}" wx:for-item="elm" style="background-image: {{ perfectInfoStatus === '领取成功' ? 'url(' + elm + ')' : '' }}"></view>
+</view>
+
+<view class='section2'>
+  <view class='item' bindtap='jumpToSetPhone'>
+    手机绑定
+    <view class='{{ accountInfo.phone === "未绑定" ? "fontColor3" : "fontColor1" }}'> {{ accountInfo.phone }} </view>
+  </view>
+  <view class='item' bindtap='jumpToSetEmail'>
+    邮箱绑定
+  <view class='overfl textOverfl {{ accountInfo.email === "未绑定" ? "fontColor3" : "fontColor1" }}'> {{ accountInfo.email }} </view>  
+  </view>
+  <view class='item'>
+    steam账号
+  <view class='{{ accountInfo.steamAcc === "未绑定" ? "fontColor3" : "fontColor1" }}'> {{ accountInfo.steamAcc }} </view>  
+  </view>
+  <view class='item'>
+    steam链接
+    <view class='{{ accountInfo.steamUrl === "未绑定" ? "fontColor3" : "fontColor1" }}'> {{ accountInfo.steamUrl }} </view>
+  </view>
+  <view class='item'>
+    支付宝
+  <view class='{{ accountInfo.alipay === "未绑定" ? "fontColor3" : "fontColor1" }}'> {{ accountInfo.alipay }} </view>
+  </view>
+</view>
