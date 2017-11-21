@@ -1,6 +1,6 @@
 {
   "pages":[
-    
+    "pages/account/setEmail/index",
     "pages/match/index",
     "pages/roll/index",
     "pages/bag/index",
@@ -10,8 +10,8 @@
     "pages/account/changeSignature/index",
     "pages/account/changePassword/index",
     "pages/account/perfectInfo/index",
-    "pages/account/setPhone/index",
-    "pages/account/setEmail/index"
+    "pages/account/setPhone/index"
+    
     
   ],
   "window": {

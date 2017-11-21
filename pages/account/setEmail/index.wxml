@@ -5,7 +5,7 @@
 
 <view class='keyin keyin0 fontColor3'>
   邮箱地址
-  <input class='value fontColor1' value="{{ accountInfo.email }}"  bindinput="keyin"></input>
+  <input class='value fontColor1' type='text'  disabled='{{ gettingCodeStatus }}' value="{{ accountInfo.email }}"  bindinput="keyin"></input>
   <view class='eyes {{ keyInVerify ? "eyes2" : "" }}'></view>
 </view>
 <view class='keyin fontColor3'>

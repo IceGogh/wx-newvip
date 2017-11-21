@@ -5,7 +5,7 @@
 
 <view class='keyin keyin0 fontColor3'>
   手机号码
-  <input class='value fontColor1' value="{{ accountInfo.phone }}" maxlength='11' minlength='11' bindinput="keyin"></input>
+  <input class='value fontColor1' type='number' disabled='{{ gettingCodeStatus }}' value="{{ accountInfo.phone }}" maxlength='11' minlength='11' bindinput="keyin"></input>
   <view class='eyes {{ keyInVerify ? "eyes2" : "" }}'></view>
 </view>
 <view class='keyin fontColor3'>
