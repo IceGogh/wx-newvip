@@ -1,2 +1,5 @@
 <!--pages/match/index.wxml-->
 <text>pages/match/index.wxml</text>
+<view class='test'>123232132</view>
+<import src="../../utils/alert.wxml"/>
+<template is="alert" data="{{ alertWords: '两次输入密码不一致，请重新输入' }}"/>

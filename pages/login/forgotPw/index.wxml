@@ -1,0 +1,29 @@
+<view class="logo"></view>
+
+<view class="keyin account">
+  <input type="text" placeholder='手机号码/邮箱' value="{{uid}}" bindinput='keyUid' disabled='{{!getCodeStatus}}'/>
+  <view class="eyes {{ keyInVerify ? 'eyes2' : '' }}"></view>
+</view>
+<view class='keyin code'>
+  <input type="password" placeholder='验证码'/>
+  <view class='getCode {{ getCodeStatus ? "getCodeFalse" : "getCodeTure" }}' bindtap="getCoding">
+    {{getCode}}
+    <view class="fontGold" hidden="{{getCodeStatus}}">s</view>
+  </view>
+</view>
+<view class='keyin password'>
+  <input type="password" placeholder='密码' bindinput="keyPw"/>
+  <view class="eyes {{ pwChk ? 'eyes2' : '' }}"></view>
+</view>
+<view class='keyin password2 password'>
+  <input type="password" placeholder='确认密码' bindinput="keyPw2"/>
+  <view class="eyes {{ pwChk2 ? 'eyes2' : '' }}"></view>
+</view>
+
+<view class='SaveBtn' bindtap="signing">确定</view>
+<view class='login fontColor3' bindtap='goBack'>
+  返回登录
+</view>
+
+<!-- 全局alert模块  -->
+<include src="../../../utils/AlertBox.wxml"/>

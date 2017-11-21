@@ -1,16 +1,27 @@
 {
   "pages":[
-    "pages/account/setEmail/index",
+    
+    "pages/login/index",
+    "pages/login/regist/index",
+    "pages/login/forgotPw/index",
+    "pages/login/lgFromPC/index",
+
+
     "pages/match/index",
     "pages/roll/index",
     "pages/bag/index",
+
+     
     "pages/account/index",
     "pages/account/accountSetting/index",
     "pages/account/changeName/index",
     "pages/account/changeSignature/index",
     "pages/account/changePassword/index",
     "pages/account/perfectInfo/index",
-    "pages/account/setPhone/index"
+    "pages/account/setPhone/index",
+    "pages/account/setEmail/index",
+    "pages/account/setSteamUrl/index"
+
     
     
   ],

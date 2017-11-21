@@ -1,0 +1,131 @@
+.logo {
+  width: 370rpx;
+  height: 95rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/logoin.png) no-repeat center center;
+  background-size: 370rpx 95rpx;
+  margin: 111rpx 0 0 42rpx;
+}
+
+.keyin {
+  width: 556rpx;
+  height: 56rpx;
+  margin: 84rpx auto 0;
+  font-size: 32rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/loginPhone.png) no-repeat left center;
+  background-size: 28rpx;
+  position: relative;
+}
+
+.keyin input {
+  width: 423rpx;
+  padding-left: 20rpx;
+  padding-right: 60rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  margin-left: 53rpx;
+  border-bottom: .7rpx #eaeff3 solid;
+}
+
+.getCode{
+  width: 208rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  font-size: 26rpx;
+}
+
+.getCode .fontGold {
+  position: absolute;
+  top: 0;
+  right: 64rpx;
+  height: 56rpx;
+  font-size: 28rpx;
+}
+
+.getCodeFalse {
+  background: #bbc5cd;
+  color: #fff;
+  border-radius: 28rpx;
+  box-shadow: 0 0 1rpx 1rpx #bbc5cd;
+}
+
+.getCodeTure {
+  background: #fff;
+  color: #ffca0d;
+}
+
+
+
+.password{
+  background-image: url(https://match.steampp.com/mobile/static/wx/account/loginPassword.png)
+}
+
+.code {
+  background-image: url(https://match.steampp.com/mobile/static/wx/account/loginVerify.png)
+}
+
+.code input {
+  width: 200rpx;
+}
+
+.SaveBtn {
+  margin-bottom: 0;
+}
+
+.login {
+  padding: 0 15rpx;
+  line-height: 84rpx;
+  height: 84rpx;
+  font-size: 30rpx;
+  margin-left: 556rpx;
+}
+
+.line {
+  width: 180rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  margin: 20rpx auto 0;
+  font-size: 32rpx;
+}
+
+.line::after {
+  content: '';
+  position: absolute;
+  width: 246rpx;
+  height: .7rpx;
+  background: #edf2f5;
+  left: -246rpx;
+  top: 28rpx;
+}
+.line::before {
+  content: '';
+  position: absolute;
+  width: 246rpx;
+  height: .7rpx;
+  background: #edf2f5;
+  right: -246rpx;
+  top: 28rpx;
+}
+
+.referees{
+  background-image: none;
+}
+
+.refereesBg {
+  position: absolute;
+  top: 0;
+  left: -1rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+}
+
+.playName {
+  background-image: url(https://match.steampp.com/mobile/static/wx/account/loginUser.png);
+  margin-bottom: 70rpx;
+}

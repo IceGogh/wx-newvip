@@ -1,0 +1,60 @@
+.logo {
+  width: 370rpx;
+  height: 95rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/logoin.png) no-repeat center center;
+  background-size: 370rpx 95rpx;
+  margin: 111rpx 0 0 42rpx;
+}
+
+.keyin {
+  width: 556rpx;
+  height: 56rpx;
+  margin: 0 auto;
+  font-size: 32rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/loginUser.png) no-repeat left center;
+  background-size: 36rpx;
+}
+
+.keyin input {
+  width: 483rpx;
+  padding-left: 20rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  margin-left: 53rpx;
+  border-bottom: .7rpx #eaeff3 solid;
+}
+
+.account {
+  margin-top: 84rpx;
+  margin-bottom: 94rpx;
+}
+
+.password{
+  background-image: url(https://match.steampp.com/mobile/static/wx/account/loginPassword.png)
+}
+
+.other {
+  width: 611rpx;
+  height: 84rpx;
+  margin: 0 auto;
+  position: relative;
+}
+
+.other > view {
+  padding: 0 12rpx;
+  font-size: 30rpx;
+  height: 84rex;
+  line-height: 84rpx;
+  position: absolute;
+  top: 0;
+}
+
+.SaveBtn {
+  margin-bottom: 0;
+}
+.other view:nth-child(1) {
+  left: 0;
+}
+.other view:nth-child(2) {
+  right: 0;
+}

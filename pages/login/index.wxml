@@ -1,0 +1,14 @@
+<view class="logo"></view>
+
+<view class="keyin account">
+  <input type="text" placeholder='用户名/手机号码/邮箱'/>
+</view>
+<view class='keyin password'>
+  <input type="password" placeholder='密码'/>
+</view>
+
+<view class='SaveBtn'>登录</view>
+<view class='other'>
+  <view class='fontColor3' bindtap='jumpToForgotPw'> 忘记密码? </view>
+  <view class='fontColor3' bindtap='jumpToRegist'> 去注册 </view>
+</view>

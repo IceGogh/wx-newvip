@@ -1,0 +1,64 @@
+.keyin {
+  width: 92%;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-bottom: 0.7rpx #edf2f5 solid;
+  margin: 30rpx auto;
+  font-size: 32rpx;
+  text-indent: 20rpx;
+  position: relative;
+}
+
+.keyin0 {
+  margin-top: 60rpx;
+}
+
+.keyin .value{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 160rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.keyin .valueCode{
+  width: 67%;
+}
+
+.codeBox {
+  position: absolute;
+  bottom: -1rpx;
+  padding: 0 10rpx;
+  right: 0rpx;
+  width: 200rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background: #fff;
+}
+
+.codeBox > view {
+  width: 200rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  text-align: center;
+  text-indent: 0;
+}
+
+.pendingCode {
+  border-radius: 35rpx; 
+  background: #bbc5cd;
+  color: #fff;
+  box-shadow: 0 0 5rpx rgba(10, 10, 10, .4);
+}
+
+.getCoding{
+  color: #ffbd22;
+}
+
+.sec {
+  display: inline;
+}

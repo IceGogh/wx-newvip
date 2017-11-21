@@ -1,0 +1,5 @@
+<template name="alert">
+  <view class='alertBase'>{{ alertWords }}</view>
+</template>
+
+<!-- 相较于  AlertBox.wxml 的 include方法引入， import方法 无法再子组件中 用父组件中定义的数据变量  -->

@@ -36,7 +36,7 @@
   border-radius: 42rpx;
   box-shadow: 0 0 1rpx 1rpx #ffc63f;
   margin: 100rpx auto;
-  background: #ffc63f;
+  background: linear-gradient(to right, #ffe100 0%, #ffba16 100%);
 }
 
 /* 公共头部  */
@@ -84,6 +84,30 @@
 
 .eyes2 {
   background-image: url(https://match.steampp.com/mobile/static/wx/account/accountEyes.png);
+}
+
+
+/* 全局 Alert弹框样式  */
+.alertBase {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -235rpx;
+  margin-top: -52rpx;
+  width: 470rpx;
+  height: 104rpx;
+  line-height: 104rpx;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+  background: #666;
+  border-radius: 12rpx;
+  transition: all .8s;
+  opacity: 0;
+}
+
+.alertShow {
+  opacity: 1;
 }
 
 /* 设计稿 定义 字体色号/背景色  */

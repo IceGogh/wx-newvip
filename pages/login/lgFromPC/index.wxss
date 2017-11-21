@@ -1,0 +1,78 @@
+.logo {
+  width: 370rpx;
+  height: 95rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/logoin.png) no-repeat center center;
+  background-size: 370rpx 95rpx;
+  margin: 111rpx 0 0 42rpx;
+}
+
+.keyin {
+  width: 556rpx;
+  height: 56rpx;
+  margin: 0 auto;
+  font-size: 32rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/loginUser.png) no-repeat left center;
+  background-size: 36rpx;
+}
+
+.keyin input {
+  width: 483rpx;
+  padding-left: 20rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  margin-left: 53rpx;
+  border-bottom: .7rpx #eaeff3 solid;
+}
+
+
+.code{
+  margin-top: 90rpx;
+  background-image: url(https://match.steampp.com/mobile/static/wx/account/loginVerify.png)
+}
+
+.line {
+  width: 180rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  margin: 20rpx auto;
+  font-size: 32rpx;
+}
+
+.line::after {
+  content: '';
+  position: absolute;
+  width: 246rpx;
+  height: .7rpx;
+  background: #edf2f5;
+  left: -246rpx;
+  top: 28rpx;
+}
+.line::before {
+  content: '';
+  position: absolute;
+  width: 246rpx;
+  height: .7rpx;
+  background: #edf2f5;
+  right: -246rpx;
+  top: 28rpx;
+}
+
+.note {
+  font-size: 28rpx;
+  width: 94%;
+  margin: 0 auto;
+  height: 54rpx;
+  line-height: 54rpx;
+}
+
+.bottom {
+  width: 94%;
+  margin: 20rpx auto;
+}
+
+.bottom image {
+  width: 100%;
+}
