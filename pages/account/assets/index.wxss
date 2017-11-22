@@ -1,0 +1,241 @@
+page {
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.common-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.titleSel {
+  width: 100%;
+  height: 76rpx;
+  line-height: 76rpx;
+  color: #9da0a5;
+  font-weight: bold;
+  border-bottom: .7rpx solid #ebeced;
+  background-color: #fff;
+  position: fixed;
+  top: 97rpx;
+  z-index: 2;
+}
+
+.titleSel > view {
+  float: left;
+  width: 33.33%;
+}
+
+.titleSel .selected {
+  color: #28292f;
+  position: relative;
+}
+
+.selected:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 36%;
+  margin-left: -18%;
+  height: 5rpx;
+  background: #ffb300;
+}
+
+.orderBy {
+  width: 90%;
+  height: 76rpx;
+  padding: 0 5%;
+  background: #fff;
+  position: fixed;
+  top: 173rpx;
+  z-index: 2;
+}
+
+.orderBy > view {
+  width: 50%;
+  height: 76rpx;
+  line-height: 76rpx;
+  float: left;
+  position: relative;
+}
+
+.value {
+  width: 28rpx;
+  height: 17rpx;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  position: absolute;
+  right: 102rpx;
+}
+
+.value1 {
+  top: 20rpx;
+  background-image: url(https://match.steampp.com/mobile/static/wx/account/arrowTop0.png)
+}
+.value2 {
+  top: 40rpx;
+  background-image: url(https://match.steampp.com/mobile/static/wx/account/arrowBottom1.png)
+}
+
+.value11 {
+  top: 20rpx;
+  background-image: url(https://match.steampp.com/mobile/static/wx/account/arrowTop1.png)
+}
+
+.value22 {
+  top: 40rpx;
+  background-image: url(https://match.steampp.com/mobile/static/wx/account/arrowBottom0.png)
+}
+
+.choose {
+  width: 24rpx;
+  height: 28rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/orderBy.png) no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  top: 22rpx;
+  right: 102rpx;
+}
+
+swiper {
+  margin-top: 249rpx;
+  border-top: 14rpx solid #edf2f5;
+}
+
+.recordItem {
+  width: 94%;
+  height: 139rpx;
+  margin:0 auto;
+  border-bottom: 1rpx solid #ebeced;
+  position: relative;
+  text-align: left;
+}
+
+.recordItem .title {
+  position: absolute;
+  width: 542rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  left: 0;
+  top: 22rpx;
+}
+
+.recordItem .time {
+  position: absolute;
+  left: 0;
+  top: 80rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 26rpx;
+}
+
+.recordItem .resulte{
+  position: absolute;
+  right: 0;
+  top: 35rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: right;
+  font-size: 34rpx;
+}
+
+.recordItem .resulte .plus {
+  position: absolute;
+  top: 0;
+  left: -24rpx;
+  height: 70rpx;
+  line-height: 68rpx;
+}
+
+.greenCol{
+  color: #00cb73;
+}
+.redCol {
+  color: #f24a3e;
+}
+
+.slidePort {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10 , 10, 0.6);
+  z-index: 20;
+}
+
+.slidePort .in {
+  width: 646rpx;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -714rpx;
+  background: #fff;
+  transition: all .5s;
+}
+
+.Show {
+  right: 0!important;
+}
+
+.slidePort .in .title {
+  width: 100%;
+  height: 87rpx;
+  line-height: 87rpx;
+  text-align: left;
+  text-indent: 21rpx;
+  margin-left: 28rpx;
+  margin-top: 28rpx;
+}
+
+.channel{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+}
+
+.channelItem {
+  width: 187rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  background: #f0f2f5;
+  border-radius: 28rpx;
+  margin: 20rpx 0 ;
+}
+
+.channel .sel {
+  background: #ffc63f;
+  color: #fff;
+}
+
+.line {
+  width: 100%;
+  height: .7rpx;
+  background: #f0f2f5;
+  margin-top: 40rpx;
+}
+
+.op {
+  width: 100%;
+  height: 95rpx;
+  line-height: 95rpx;
+  border-top: #f0f2f5 .7rpx solid;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.op > view {
+  width: 50%;
+  height: 95rpx;
+  float: left;
+}
+
+.op .confirm {
+  background: #ffc63f;
+  color: #fff;
+}

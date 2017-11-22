@@ -39,13 +39,17 @@ Page({
     })
   },
   
-  // 跳转到个人设置
+  // 跳转到 个人设置
   jumpToSetting: function(){
     wx.navigateTo({
-      url: 'accountSetting/index',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
+      url: 'accountSetting/index'
+    })
+  },
+
+  // 跳转到 [资产摘要]
+  jumpToAssets: function () {
+    wx.navigateTo({
+      url: 'assets/index'
     })
   },
   

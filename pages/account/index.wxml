@@ -48,7 +48,7 @@
     <view class='itemIn fontColor2'>我的推荐</view>
   </view>
   <view class='item'>
-    <view class='itemIn fontColor2'>资产摘要</view>
+    <view class='itemIn fontColor2' bindtap='jumpToAssets'>资产摘要</view>
   </view>
   <view class='item'>
     <view class='itemIn fontColor2'>常见问题</view>
