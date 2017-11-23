@@ -1,0 +1,40 @@
+<view class="common-header">
+  <view class='backBtn' bindtap='goBack'></view>
+  赏金制度
+</view>
+<view class='wrap fontColor2'>
+  <text>作为一名赏金猎人,VIPGame用户的第一要务当然是获取足够的赏金~</text>
+  <view class='fontColor1'>我们定义了五种赏金类型:</view>
+  <image src="https://match.steampp.com/mobile/static/wx/account/goldList.png"></image>
+  <text>我们的赏金是 RMB 1:1 的价值，分别是：</text>
+  <view>一块赏金 = 1RMB</view>
+  <view>一打赏金 = 10RMB</view>
+  <view>一袋赏金 = 50RMB</view>
+  <view>一盒赏金 = 100RMB</view>
+  <view>一箱赏金 = 500RMB</view>
+  <view class='fontColor1'>赏金能干啥？</view>
+  <view>
+    a. 参加竞猜或娱乐活动， 激爆骰子了-石头剪刀布-幸运宝箱等
+  </view>
+  <view>
+    b. 在商城中直接购买dota2，csgo饰品
+  </view>
+  <view>
+    c. 购买实体物品，我们每周都准备了多件用赏金购买的商品，京东直接发货，全程无忧
+  </view>
+
+  <view class='fontColor1'>
+    如何获取赏金?
+  </view>
+  <view>
+    a. 当然是充值啦~
+  </view>
+  <view>
+    b. 饰品兑换赏金. 我们接受大部分饰品直接兑换成赏金，方便快捷
+  </view>
+  <view>
+    c. 关注官方的工作号，微博，加入官方QQ群，我们会不定期发放赏金标记，获取该标记可以兑换成赏金哟~
+    赏金标记为六位数字符。如"6X21JUI"
+  </view>
+</view>
+

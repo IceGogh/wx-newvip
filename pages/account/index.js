@@ -53,6 +53,20 @@ Page({
     })
   },
   
+  // 跳转到 [常见问题]
+  jumpToQues: function () {
+    wx.navigateTo({
+      url: 'questionIndex/index'
+    })
+  },
+
+  // 跳转到 [消息中心]
+  jumpToMessageCenter: function () {
+    wx.navigateTo({
+      url: 'messageCenter/index?text=123'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

@@ -1,0 +1,13 @@
+<view class="common-header">
+  <view class='backBtn' bindtap='goBack'></view>
+  {{msg[detailInd].header}}
+</view>
+
+<view class='msg-item' wx:for="{{msg[detailInd].msgData}}">
+  <view class='time fontColor3'>{{ item.time }}</view>
+  <view class='msg fontColor2 overfl textOverfl'>
+    {{ item.msg }}
+    <span>{{ item.msgKey }}</span>
+    {{ item.msgPost }}
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<view class="common-header">
+  <view class='backBtn' bindtap='goBack'></view>
+  常见问题
+</view>
+<view class='box'>
+  <view class='box-item' wx:for="{{ ques }}"  data-cc="{{index}}" bindtap='jumpToPageUrl{{index}}'>
+    <view class='bg' style="background-image: url({{ item.bgUrl }})"></view>
+    <view class='fontColor2'>{{ item.title }}</view>
+  </view>
+</view>

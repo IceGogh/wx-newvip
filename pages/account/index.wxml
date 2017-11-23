@@ -12,7 +12,7 @@
     <view class='name fontColor1 overfl textOverfl'>{{ accountInfo.name }}</view>
     <view class='level' style="background-image:url({{ accountInfo.levelBg }})">{{ accountInfo.level }}</view>
   </view>
-  <view class='msgPart'></view>
+  <view class='msgPart' bindtap='jumpToMessageCenter'></view>
 </view>
 
 <view class='section2 bgColor'>
@@ -51,7 +51,7 @@
     <view class='itemIn fontColor2' bindtap='jumpToAssets'>资产摘要</view>
   </view>
   <view class='item'>
-    <view class='itemIn fontColor2'>常见问题</view>
+    <view class='itemIn fontColor2' bindtap='jumpToQues'>常见问题</view>
   </view>
 </view>
 

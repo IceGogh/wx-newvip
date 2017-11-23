@@ -1,0 +1,25 @@
+.box {
+  width: 94%;
+  margin: 36rpx auto 0;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  font-size: 32rpx;
+  text-align: center;
+}
+
+.box-item {
+  width: 319rpx;
+  height: 208rpx;
+  background: #f3f7fa;
+  border-radius: 14rpx;
+  margin-bottom: 36rpx;
+}
+
+.box-item .bg{
+  width: 104rpx;
+  height: 104rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/question1.png) no-repeat center center;
+  background-size: 80rpx;
+  margin: 34rpx auto 0;
+}

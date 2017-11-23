@@ -1,8 +1,6 @@
 {
   "pages":[
-
     
-
     "pages/match/index",
     "pages/roll/index",
     "pages/bag/index",
@@ -21,7 +19,11 @@
     "pages/account/setPhone/index",
     "pages/account/setEmail/index",
     "pages/account/setSteamUrl/index",
-    "pages/account/assets/index"
+    "pages/account/assets/index",
+    "pages/account/goldRule/index",
+    "pages/account/questionIndex/index",
+    "pages/account/msgDetail/index",
+    "pages/account/messageCenter/index"
 
     
     

@@ -1,0 +1,25 @@
+.msg-item {
+  width: 94%;
+  height: 139rpx;
+  margin: 0 auto;
+  border-bottom: .7rpx solid #eef2f5;
+}
+
+.msg-item .time {
+  height: 41rpx;
+  line-height: 41rpx;
+  margin-top: 27rpx;
+  font-size: 26rpx;
+}
+
+.msg-item .msg {
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+  text-indent: 4rpx;
+}
+
+.msg-item .msg span {
+  color: #ffb300;
+}

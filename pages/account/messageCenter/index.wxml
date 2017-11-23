@@ -1,0 +1,11 @@
+<view class="common-header">
+  <view class='backBtn' bindtap='goBack'></view>
+  消息中心
+</view>
+
+<view class='msgItem' wx:for="{{ msgData }}" data-detailInd="{{index}}" bindtap='jumpToMsgDetail'>
+  <view class='bg' style="background-image:url({{ item.bg }})"></view>
+  <view class='title'>{{ item.title }}</view>
+  <view class='time fontColor3'>{{ item.time }}</view>
+  <view class='msg fontColor3 overfl textOverfl'> {{ item.msg }} </view>
+</view>
