@@ -28,7 +28,7 @@
     <view class='itemBg'></view>
     <view class="fontColor4">存取</view>
   </view>
-  <view class='item'>
+  <view class='item' bindtap='jumpToRecharge'>
     <view class="fontColor4">账户赏金</view>
     <view class='fontColor2 overfl textOverfl'>{{ accountInfo.gold }}</view>
     <view class='itemBg'></view>
@@ -45,7 +45,7 @@
     <view class='itemIn fontColor2'>我的竞猜</view>
   </view>
   <view class='item'>
-    <view class='itemIn fontColor2'>我的推荐</view>
+    <view class='itemIn fontColor2' bindtap='jumpToMyRecommend'>我的推荐</view>
   </view>
   <view class='item'>
     <view class='itemIn fontColor2' bindtap='jumpToAssets'>资产摘要</view>

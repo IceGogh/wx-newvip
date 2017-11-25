@@ -1,0 +1,23 @@
+<view class="common-header">
+  <view class='backBtn' bindtap='goBack'></view>
+  赏金充值
+</view>
+<view hidden='{{ step === 2 ? true : false }}'>
+  <view class='coin'></view>
+  <view class='coinNub fontGold'>{{ coinNumber}}</view>
+  <view class='coinBtm fontGold'>赏金剩余</view>
+
+  <view class='SaveBtn Btn1' bindtap='toStep2'>赏金充值</view>
+  <view class='SaveBtn Btn2'>饰品兑换赏金</view>
+</view>
+<view hidden='{{ step === 1 ? true : false }}'>
+  <view class='number'>
+    <text class='fontColor3'>充值金额</text>
+    <input type='number' maxlength='5' focus='true' value="{{ reNumber }}" bindinput='keyNubmer'></input>
+    <view bindtap='clearNumber'></view>
+  </view>
+  <view class='numberList'>
+    <view wx:for="{{ reNumberList }}" bindtap='selectNum' data-Nub="{{item}}">{{ item }}</view>
+  </view>
+  <view class='SaveBtn'>下一步</view>
+</view>

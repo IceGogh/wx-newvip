@@ -1,0 +1,81 @@
+<view class="common-header">
+  <view class='backBtn' bindtap='goBack'></view>
+  我的推荐
+</view>
+<view class='banner'></view>
+
+<view class='note fontColor1'>
+  好友注册时需填写推荐人ID，则该用户被推荐人成功招募
+</view>
+<view class='note fontColor1'>
+  成功被招募的玩家达到以下条件，则推荐人享有相应的招募福利
+</view>
+
+<view class='table'>
+  <view class='tb clearFloat'>
+    <view class="td td0">竞猜总量</view>
+    <view class="td td1">
+      <view>$100</view>
+      <view>(500赏金)</view>
+    </view>
+    <view class="td td1">
+      <view>$1000</view>
+      <view>(5000赏金)</view>
+    </view>
+    <view class="td td1">
+      <view>$30000</view>
+      <view>(150000赏金)</view>
+    </view>
+  </view>
+  <view class='tb clearFloat'>
+    <view class="td td2">招募福利</view>
+    <view class="td td2">18微信红包</view>
+    <view class="td td2">58微信红包</view>
+    <view class="td td2">388微信红包</view>
+  </view>
+</view>
+  
+
+
+<view class='note fontColor1'>
+  为防止作弊套利，被招募的玩家均需经过支付宝认证方可领取福利
+</view>
+
+<view class='SaveBtn' bindtap='sharing'>分享</view>
+
+<view hidden="{{ recommendData.length === 0 }}">
+  <view class='line'></view>
+  <view class='recommend'>
+    <view class='in'>我的推荐</view>
+  </view>
+  <view>
+    <view class='th fontColor3 clearFloat'>
+      <view>　时间</view>
+      <view>好友账号</view>
+      <view>　竞猜总量</view>
+      <view class='bonus'>招募福利</view>
+    </view>
+    <view class='th th1 clearFloat' wx:for="{{ recommendData }}">
+      <view class='fontColor3'>{{item.time}}</view>
+      <view class='overfl textOverfl'>{{item.account}}</view>
+      <view class='total'>
+        <view>{{item.total1}}</view>
+        <view>{{item.total2}}</view>
+      </view>
+      <view class='bonus'>{{item.bonus}}</view>
+    </view>
+  </view>
+</view>
+
+<!-- 分享全屏二维码  -->
+<view class='codeScr' hidden="{{!share}}">
+  <view class='codeBox'>
+    <view class='close' bindtap='closeShare'></view>
+    <view class='code'></view>
+    <view class='word'>您的推广二维码已生成</view>
+    <view class='optionBtn'>
+      <view class='copy'>复制链接</view>
+      <view class='saveCode'>保存二维码</view>
+    </view>
+  </view>
+</view>

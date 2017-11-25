@@ -1,0 +1,214 @@
+
+.common-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+.common-header .backBtn {
+  background-image: url(https://match.steampp.com/mobile/static/wx/account/arrowLeft2.png);
+  background-size: 28rpx;
+}
+
+.banner {
+  width: 100%;
+  height: 417rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/recommendBg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.note {
+  width: 88%;
+  padding-left: 6%;
+  margin: 36rpx auto;
+  line-height: 45rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/dot.png) no-repeat left 6rpx;
+  background-size: 34rpx;
+  font-size: 28rpx;
+}
+
+.table {
+
+  width: 96%;
+  margin: 0 auto;
+  background: #edf2f5;
+  border-radius: 12rpx;
+  text-align: center;
+  color: #5c5f68;
+  font-size: 25rpx;
+}
+.td {
+  width: 25%;
+  float: left;
+}
+
+.td0 {
+  height: 90rpx;
+  line-height: 90rpx;
+}
+
+.td1 {
+  height: 90rpx;
+}
+
+.td1 > view {
+  line-height: 42rpx;
+}
+
+.td2 {
+  height: 65rpx;
+  line-height: 65rpx;
+}
+
+.SaveBtn {
+  width: 236rpx;
+  height: 62rpx;
+  line-height: 62rpx;
+  margin: 40rpx auto;
+}
+.line {
+  height: 18rpx;
+  background: #edf2f5;
+}
+
+.recommend {
+  width: 94%;
+  height: 104rpx;
+  border-bottom: .7rpx solid #edf2f6;
+  margin: 14rpx auto 0;
+  color: #6e6e76;
+}
+
+.recommend .in {
+  padding-left: 60rpx;
+  height: 104rpx;
+  line-height: 104rpx;
+  position: relative;
+}
+
+.recommend .in::after {
+  content: '';
+  position: absolute;
+  width: 10rpx;
+  height: 32rpx; 
+  background: #bbc5ce;
+  border-radius: 5rpx;
+  top: 38rpx;
+  left: 36rpx;
+}
+
+.th1  {
+  color: #5c5f68;
+  border-bottom: .7rpx #edf2f6 solid;
+  font-size: 28rpx;
+}
+
+.th {
+  width: 96%;
+  margin: 0 auto;
+}
+
+.th > view {
+  width: 25%;
+  height: 100rpx;
+  line-height: 100rpx;
+  float: left;
+}
+
+.th1 .fontColor3 {
+  text-align: left;
+}
+
+.bonus {
+  box-sizing: border-box;
+  padding-right: 26rpx;
+  text-align: right;
+}
+
+.total > view {
+  height: 50prx;
+  line-height: 50rpx;
+  text-align: center;
+  color: #f2673e;
+}
+
+.codeScr {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(10, 10, 10, .4);
+}
+
+.codeBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 556rpx;
+  height: 625rpx;
+  margin-left: -278rpx;
+  margin-top: -312rpx;
+  background: #fff;
+  border-radius: 18rpx;
+}
+
+.codeBox .close {
+  position: absolute;
+  top: 26rpx;
+  right: 26rpx;
+  width: 48rpx;
+  height: 48rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/close.png) no-repeat center center;
+  background-size: 32rpx;
+}
+
+.codeBox .code{
+  position:absolute;
+  width: 319rpx;
+  height: 319rpx;
+  background-color: #edf2f5;
+  border-radius: 18rpx;
+  top: 100rpx;
+  left: 50%;
+  margin-left: -160rpx;
+}
+
+.codeBox .word {
+  width: 100%;
+  height: 94rpx;
+  line-height: 94rpx;
+  color: #9da0a5;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 420rpx;
+}
+
+.optionBtn {
+  width: 90%;
+  padding: 0 5%;
+  height: 63rpx;
+  position: absolute;
+  left: 0;
+  top: 520rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.optionBtn > view {
+  width: 208rpx;
+  height: 63rpx;
+  line-height: 63rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 31rpx;
+  float: left;
+  background-color: #ffc640;
+}
+
+.optionBtn .saveCode{
+  background-color: #ef6a0f;
+}

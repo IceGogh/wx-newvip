@@ -1,0 +1,67 @@
+<view class="common-header">
+  <view class='backBtn' bindtap='goBack'></view>
+  我的收益
+</view>
+<view class='banner'>
+  <view class='earning'>
+    <view>
+      <view class='nub overfl textOverfl'>{{earnings.silver}}</view>
+      <view class='kind'>碎银收益</view>
+    </view>
+    <view>
+      <view class='nub overfl textOverfl'>{{earnings.props}}</view>
+      <view class='kind'>饰品收益</view>
+    </view>
+    <view>
+      <view class='nub overfl textOverfl'>{{earnings.gold}}</view>
+      <view class='kind'>赏金收益</view>
+    </view>
+  </view>
+  <view class='weekOrTotal'>
+    <view class='week {{ hov ? "hov" : ""}}'>周</view>
+    <view class='total {{ !hov ? "hov" : ""}}'>总</view>
+  </view>
+</view>
+
+<view class='title'>
+  <view class='in'>
+    竞猜
+    <view class='recorde'>竞猜记录</view>
+  </view>
+</view>
+
+<swiper>
+  <swiper-item>
+    <view class='rateBg'>
+      <view class='rateBase'>
+        <view class='rateData'>
+          <view>{{ rateData['week'].rate }}<span>%</span></view>
+          <view>周竞猜胜率</view>
+        </view>
+
+
+        <view class='rateL'></view>
+        <view class='rateR'></view>
+        <view class='rateLac' animation="{{weekRotate}}"></view>
+        <view class='rateRac {{ rateWeekStatus ? "zInd200" : "" }}' animation="{{weekRotateR}}"></view>
+      </view>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class='rateBg'>
+      <view class='rateBase'>
+        <view class='rateData'>
+          <view>{{ rateData['total'].rate }}<span>%</span></view>
+          <view>总竞猜胜率</view>
+        </view>
+
+
+        <view class='rateL'></view>
+        <view class='rateR'></view>
+        <view class='rateLac' animation="{{weekRotate}}"></view>
+        <view class='rateRac' animation="{{weekRotateR}}"></view>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>

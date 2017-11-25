@@ -1,0 +1,82 @@
+.coin {
+  width: 150rpx;
+  height: 150rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/goldicon.png) no-repeat center center;
+  background-size: 130rpx;
+  margin: 90rpx auto 0;
+}
+
+.coinNub {
+  font-size: 70rpx;
+  text-align: center;
+}
+
+.coinBtm {
+  font-size: 26rpx;
+  text-align: center;
+}
+
+.Btn1 {
+  margin: 64rpx auto 0;
+}
+
+.Btn2 {
+  margin-top: 30rpx;
+  background: #bbc5ce;
+  box-shadow: 0 0 1rpx 1rpx #bbc5ce;
+}
+
+.number {
+  width: 94%;
+  height: 68rpx;
+  line-height: 68rpx;
+  border-bottom: .7rpx solid #ffc640;
+  margin: 58rpx auto 0;
+  position: relative;
+}
+
+.number > text {
+  padding-left: 10rpx;
+  font-size: 28rpx;
+}
+
+.number input {
+  position: absolute;
+  top: 0;
+  left: 150rpx;
+  width: 220rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  color: #ffc640;
+  font-size: 32rpx;
+}
+
+.number > view {
+  position: absolute;
+  top: 0;
+  right: 14rpx;
+  width: 68rpx;
+  height: 68rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/account/close.png) no-repeat right center;
+  background-size: 40rpx;
+}
+
+.numberList {
+  width: 96%;
+  margin: 50rpx auto 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.numberList > view {
+  width: 208rpx;
+  height: 104rpx;
+  line-height: 104rpx;
+  color: #ffc640;
+  background: #f1f2f6;
+  text-align: center;
+  font-size: 30rpx;
+  border-radius: 52rpx;
+  margin: 10rpx;
+}

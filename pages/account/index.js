@@ -67,6 +67,20 @@ Page({
     })
   },
 
+  // 跳转到 [消息中心]
+  jumpToRecharge: function() {
+    wx.navigateTo({
+      url: 'reCharge/index'
+    })
+  },
+
+  // 跳转到 [我的推荐]
+  jumpToMyRecommend: function () {
+    wx.navigateTo({
+      url: 'myRecommend/index'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
