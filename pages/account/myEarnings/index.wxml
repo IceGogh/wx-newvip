@@ -18,8 +18,8 @@
     </view>
   </view>
   <view class='weekOrTotal'>
-    <view class='week {{ hov ? "hov" : ""}}'>周</view>
-    <view class='total {{ !hov ? "hov" : ""}}'>总</view>
+    <view class='week {{ hov === 0 ? "hov" : ""}}' bindtap='selHov'>周</view>
+    <view class='total {{ hov === 1 ? "hov" : ""}}' bindtap='selHov2'>总</view>
   </view>
 </view>
 
@@ -30,7 +30,7 @@
   </view>
 </view>
 
-<swiper>
+<swiper current="{{ hov }}" bindchange="swiperHov">
   <swiper-item>
     <view class='rateBg'>
       <view class='rateBase'>
@@ -46,6 +46,36 @@
         <view class='rateRac {{ rateWeekStatus ? "zInd200" : "" }}' animation="{{weekRotateR}}"></view>
       </view>
     </view>
+
+    <view class='emLine'>
+      <view class='em'>
+        <view class='colorRed'>{{ rateData.week.times }}</view>
+        <view class='fontColor3'>周竞猜次数</view>
+      </view>
+      <view class='em'>
+        <view class='colorRed'>{{ rateData.week.goldEarnings }}</view>
+        <view class='fontColor3'>竞猜赏金收益</view>
+      </view>
+      <view class='em'>
+        <view class='colorRed'>{{ rateData.week.propsEarnings }}</view>
+        <view class='fontColor3'>竞猜饰品收益</view>
+      </view>
+    </view>
+    <view>
+      <view class='em'>
+        <view class='colorRed'>{{ rateData.week.winTime }}</view>
+        <view class='fontColor3'>周竞猜次数</view>
+      </view>
+      <view class='em'>
+        <view class='colorRed'>{{ rateData.week.winBonus }}</view>
+        <view class='fontColor3'>竞猜赏金收益</view>
+      </view>
+      <view class='em'>
+        <view class='colorRed'>{{ rateData.week.rebate }}</view>
+        <view class='fontColor3'>竞猜饰品收益</view>
+      </view>
+    </view>
+      
   </swiper-item>
 
   <swiper-item>
@@ -53,14 +83,14 @@
       <view class='rateBase'>
         <view class='rateData'>
           <view>{{ rateData['total'].rate }}<span>%</span></view>
-          <view>总竞猜胜率</view>
+          <view>竞猜胜率</view>
         </view>
 
 
         <view class='rateL'></view>
         <view class='rateR'></view>
-        <view class='rateLac' animation="{{weekRotate}}"></view>
-        <view class='rateRac' animation="{{weekRotateR}}"></view>
+        <view class='rateLac' animation="{{totalRotate}}"></view>
+        <view class='rateRac {{ rateTotalStatus ? "zInd200" : "" }}' animation="{{totalRotateR}}"></view>
       </view>
     </view>
   </swiper-item>

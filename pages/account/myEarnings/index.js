@@ -10,7 +10,7 @@ Page({
       "props": 2432312321312312,
       "gold": 231
     },
-    hov: true,
+    hov: 0,
     rateWeekStatus: false,
     rateTotalStatus: false,
     weekRotate: '',
@@ -19,7 +19,7 @@ Page({
     totalRotateR: '',
     rateData: {
       "week": {
-        "rate": 10,
+        "rate": 67,
         "times": 26,
         "goldEarnings": 20000,
         "propsEarnings": 20001,
@@ -28,7 +28,7 @@ Page({
         "rebate": 666
       },
       "total": {
-        "rate": 12,
+        "rate": 24,
         "times": 226,
         "goldEarnings": -20000,
         "propsEarnings": -1001,
@@ -39,9 +39,26 @@ Page({
     }
   },
 
+  // selHov 周
+  selHov: function(){
+    this.setData({
+      hov:　0
+    })
+  },
 
-  canvasIdErrorCallback: function(e){
-    console.error(e.detail.errMsg)
+  // selHov2 总
+  selHov2: function () {
+    this.setData({
+      hov: 　1
+    })
+  },
+
+  // swiperHov 
+  swiperHov: function(e){
+    let Val = e.detail.current;
+    this.setData({
+      hov: Val
+    })
   },
 
   /**
@@ -61,7 +78,8 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    let RateW = this.data.rateData.week.rate;
+    let RateW = this.data.rateData.week.rate
+    ,   RateT = this.data.rateData.total.rate;
     if (RateW > 100){
       RateW = 100
     }
@@ -108,6 +126,54 @@ Page({
           weekRotateR: rateR.export()
         })
       },1000)
+    }
+
+
+    // 总竞猜胜率
+    if (RateT > 100) {
+      RateT = 100
+    }
+    if (RateT <= 50 && RateT >= 0) {
+
+      var Deg2 = RateT * 3.6;
+      var rateL2 = wx.createAnimation({
+        duration: RateT * 20,
+        transformOrigin: "100% 50% 0",
+        timingFunction: "linear"
+      }).rotate(Deg2).step();
+
+      this.setData({
+        rateTotalStatus: false,
+        totalRotate: rateL2.export()
+      })
+
+
+
+    } else {
+      var Deg2 = (RateW - 50) * 3.6;
+
+      var rateL2 = wx.createAnimation({
+        duration: 1000,
+        transformOrigin: "100% 50% 0",
+        timingFunction: 'linear'
+      }).rotate(180).step();
+
+      this.setData({
+        totalRotate: rateL2.export()
+      })
+      var t = this;
+      setTimeout(function () {
+        var rateR2 = wx.createAnimation({
+          duration: (RateT - 50) * 20,
+          transformOrigin: "0 50% 0",
+          timingFunction: 'linear'
+        }).rotate(Deg2).step();
+
+        t.setData({
+          rateTotalStatus: true,
+          totalRotateR: rateR2.export()
+        })
+      }, 1000)
     }
 
   },
