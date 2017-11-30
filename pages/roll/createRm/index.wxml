@@ -1,0 +1,51 @@
+<view class="common-header">
+  <view class='backBtn' bindtap='goBack'></view>
+  创建ROLL
+</view>
+<view class='headerBg'></view>
+
+<view class='roomInfo'>
+  <view class='photo'>
+    <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171009/X00068F9.jpg">头像</image>
+    <view>heytoo</view>
+  </view>
+  <view class='rmItem'>
+    <view>截止时间*</view>
+    <picker class='dateSel' mode="date" start="2017-11-30" end="2018-1-30" value="{{date}}">
+      <view>选择日期{{date}}</view>
+    </picker>
+    <picker class='timeSel' mode="time" start="00:00" end="12:00" value="{{time}}">
+      <view>选择时间{{time}}</view>
+    </picker>
+  </view>
+  <view class='rmItem'>
+    <view>中奖人数*</view>
+    <input type="number" placeholder='请输入中奖人数' maxlength='4'/>
+  </view>
+  <view class='rmItem'>
+    <view>人数上限*</view>
+    <input type="number" placeholder='请输入人数上限' maxlength='4'/>
+  </view>
+  <view class='rmItem'>
+    <view>房间密码</view>
+    <input type="password" placeholder='可设置房间密码' maxlength='16'/>
+  </view>
+  <view class='rmItem note'>
+    <view>活动说明</view>
+    <textarea></textarea>
+  </view>
+  <view class='rmItem'>
+    <view>微博地址</view>
+    <input type="text" placeholder='可设置房间密码'/>
+  </view>
+  <view class='rmItem'>
+    <view>直播地址</view>
+    <input type="text" placeholder='可设置房间密码'/>
+  </view>
+</view>
+
+
+<view class='BtnArea'>
+  <view class='cancle fontColor4'>取消</view>
+  <view class='next'>下一步</view>
+</view>

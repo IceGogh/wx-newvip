@@ -63,7 +63,7 @@ page{
   top: 0;
   left: 14rpx;
   background: url(https://match.steampp.com/mobile/static/wx/account/arrowLeft.png) no-repeat center center;
-  background-size: 36rpx;
+  background-size: 26rpx;
 }
 
 /* 统一格式 item  */

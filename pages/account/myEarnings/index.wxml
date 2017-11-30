@@ -30,7 +30,7 @@
   </view>
 </view>
 
-<swiper current="{{ hov }}" bindchange="swiperHov">
+<swiper current="{{ hov }}" bindchange="swiperHov" style="height: 590rpx;">
   <swiper-item>
     <view class='rateBg'>
       <view class='rateBase'>
@@ -47,12 +47,12 @@
       </view>
     </view>
 
-    <view class='emLine'>
+    <view class='emLine emLine1'>
       <view class='em'>
         <view class='colorRed'>{{ rateData.week.times }}</view>
         <view class='fontColor3'>周竞猜次数</view>
       </view>
-      <view class='em'>
+      <view class='em em2'>
         <view class='colorRed'>{{ rateData.week.goldEarnings }}</view>
         <view class='fontColor3'>竞猜赏金收益</view>
       </view>
@@ -61,12 +61,12 @@
         <view class='fontColor3'>竞猜饰品收益</view>
       </view>
     </view>
-    <view>
+    <view class='emLine'>
       <view class='em'>
         <view class='colorRed'>{{ rateData.week.winTime }}</view>
         <view class='fontColor3'>周竞猜次数</view>
       </view>
-      <view class='em'>
+      <view class='em em2'>
         <view class='colorRed'>{{ rateData.week.winBonus }}</view>
         <view class='fontColor3'>竞猜赏金收益</view>
       </view>
@@ -83,7 +83,7 @@
       <view class='rateBase'>
         <view class='rateData'>
           <view>{{ rateData['total'].rate }}<span>%</span></view>
-          <view>竞猜胜率</view>
+          <view>总竞猜胜率</view>
         </view>
 
 
@@ -93,5 +93,50 @@
         <view class='rateRac {{ rateTotalStatus ? "zInd200" : "" }}' animation="{{totalRotateR}}"></view>
       </view>
     </view>
+
+    <view class='emLine emLine1'>
+      <view class='em'>
+        <view class='colorRed'>{{ rateData.total.times }}</view>
+        <view class='fontColor3'>竞猜总次数</view>
+      </view>
+      <view class='em em2'>
+        <view class='colorRed'>{{ rateData.total.goldEarnings }}</view>
+        <view class='fontColor3'>竞猜赏金总收益</view>
+      </view>
+      <view class='em'>
+        <view class='colorRed'>{{ rateData.total.propsEarnings }}</view>
+        <view class='fontColor3'>竞猜饰品总收益</view>
+      </view>
+    </view>
+    <view class='emLine'>
+      <view class='em'>
+        <view class='colorRed'>{{ rateData.total.winTime }}</view>
+        <view class='fontColor3'>竞猜总次数</view>
+      </view>
+      <view class='em em2'>
+        <view class='colorRed'>{{ rateData.total.winBonus }}</view>
+        <view class='fontColor3'>竞猜赏金总收益</view>
+      </view>
+      <view class='em'>
+        <view class='colorRed'>{{ rateData.total.rebate }}</view>
+        <view class='fontColor3'>竞猜饰品总收益</view>
+      </view>
+    </view>
+      
   </swiper-item>
 </swiper>
+
+<view class='bottom'>
+  <view class='btmLine'>
+    <view class='in'>娱乐活动</view>
+    <view class='nub'>+{{gameGet}}</view>
+  </view>
+  <view class='btmLine'>
+    <view class='in'>ROLL</view>
+    <view class='nub'>+${{rollGet}}</view>
+  </view>
+  <view class='btmLine'>
+    <view class='in'>推荐奖励</view>
+    <view class='nub'>+${{reGet}}</view>
+  </view>
+</view>

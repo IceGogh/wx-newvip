@@ -35,8 +35,12 @@ Page({
         "winTime": 16,
         "winBonus": 518,
         "rebate": 6
-      },
-    }
+      }
+    },
+
+    "gameGet": 255,
+    "rollGet": 256,
+    "reGet": 257
   },
 
   // selHov 周
@@ -58,6 +62,13 @@ Page({
     let Val = e.detail.current;
     this.setData({
       hov: Val
+    })
+  },
+
+  // 页面后退
+  goBack: function () {
+    wx.navigateBack({
+      url: ''
     })
   },
 

@@ -1,2 +1,215 @@
-<!--pages/roll/index.wxml-->
-<text>pages/roll/index.wxml</text>
+<view class="headerPart">
+  <view class='input'>
+    <input type="text" placeholder='输入房间号搜索'/>
+    <view></view>
+  </view>
+  <view class='createRoom'>+</view>
+</view>
+<view class='roll'>
+  <view class='{{ currentTab === 0 ? "selectList" : ""}}' data-tab="0" bindtap='selTab'>官方ROLL</view>
+  <view class='{{ currentTab === 1 ? "selectList" : ""}}' data-tab="1" bindtap='selTab'>玩家ROLL</view>
+  <view class='{{ currentTab === 2 ? "selectList" : ""}}' data-tab="2" bindtap='selTab'>我创建的</view>
+  <view class='{{ currentTab === 3 ? "selectList" : ""}}' data-tab="3" bindtap='selTab'>我参与的</view>
+</view>
+<swiper style="height: 748rpx;" current="{{currentTab}}" bindchange="swiperChange">
+  <swiper-item > 
+    <view class='rollList' wx:for="{{roll1}}">
+      <view class='rollroom'>
+        <view>
+          <view class='photo'>
+            <image src="{{item.photo}}"></image>
+          </view>
+          <view class='name'>
+            <view class='player'>{{item.name}}</view>
+            <view class='timeout'>截止时间</view>
+          </view>
+          <view class='nub'>
+            <view class='roomnub'>
+              房间号: {{item.room}}
+              <view class='roomLock' hidden="{{!item.locked}}"></view>
+            </view>
+            <view class='time'>{{item.time}}</view>
+          </view>
+        </view>
+
+        <view>
+          <view class='img'>
+            <image src="{{item.propsImg[0]}}"></image>
+          </view>
+          <view class='img'>
+            <image src="{{item.propsImg[1]}}"></image>
+          </view>
+          <view class='img'>
+            <image src="{{item.propsImg[2]}}"></image>
+          </view>
+          <view class='img'>
+            <image src="{{item.propsImg[3]}}"></image>
+          </view>
+        </view>
+        
+        <view class='nubinfo'>
+          <view class='playerNub'>
+            <view>{{item.joined}}/{{item.total}} 人</view>
+            <view class='fontColor3'>已参与/上限人数</view>
+          </view>
+
+          <view class='propsNub'>
+            <view>${{item.propsVal}}</view>
+            <view class='fontColor3'>共{{item.props}}件饰品</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='loading'></view>
+  </swiper-item>
+  <swiper-item > 
+    <view class='rollList' wx:for="{{roll2}}">
+      <view class='rollroom'>
+        <view>
+          <view class='photo'>
+            <image src="{{item.photo}}"></image>
+          </view>
+          <view class='name'>
+            <view class='player'>{{item.name}}</view>
+            <view class='timeout'>截止时间</view>
+          </view>
+          <view class='nub'>
+            <view class='roomnub'>
+              房间号: {{item.room}}
+              <view class='roomLock' hidden="{{!item.locked}}"></view>
+            </view>
+            <view class='time'>{{item.time}}</view>
+          </view>
+        </view>
+
+        <view>
+          <view class='img'>
+            <image src="{{item.propsImg[0]}}"></image>
+          </view>
+          <view class='img'>
+            <image src="{{item.propsImg[1]}}"></image>
+          </view>
+          <view class='img'>
+            <image src="{{item.propsImg[2]}}"></image>
+          </view>
+          <view class='img'>
+            <image src="{{item.propsImg[3]}}"></image>
+          </view>
+        </view>
+        
+        <view class='nubinfo'>
+          <view class='playerNub'>
+            <view>{{item.joined}}/{{item.total}} 人</view>
+            <view class='fontColor3'>已参与/上限人数</view>
+          </view>
+
+          <view class='propsNub'>
+            <view>${{item.propsVal}}</view>
+            <view class='fontColor3'>共{{item.props}}件饰品</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='loading'></view>
+  </swiper-item>
+  <swiper-item > 
+    <view class='rollList' wx:for="{{roll3}}">
+      <view class='rollroom'>
+        <view>
+          <view class='photo'>
+            <image src="{{item.photo}}"></image>
+          </view>
+          <view class='name'>
+            <view class='player'>{{item.name}}</view>
+            <view class='timeout'>截止时间</view>
+          </view>
+          <view class='nub'>
+            <view class='roomnub'>
+              房间号: {{item.room}}
+              <view class='roomLock' hidden="{{!item.locked}}"></view>
+            </view>
+            <view class='time'>{{item.time}}</view>
+          </view>
+        </view>
+
+        <view>
+          <view class='img'>
+            <image src="{{item.propsImg[0]}}"></image>
+          </view>
+          <view class='img'>
+            <image src="{{item.propsImg[1]}}"></image>
+          </view>
+          <view class='img'>
+            <image src="{{item.propsImg[2]}}"></image>
+          </view>
+          <view class='img'>
+            <image src="{{item.propsImg[3]}}"></image>
+          </view>
+        </view>
+        
+        <view class='nubinfo'>
+          <view class='playerNub'>
+            <view>{{item.joined}}/{{item.total}} 人</view>
+            <view class='fontColor3'>已参与/上限人数</view>
+          </view>
+
+          <view class='propsNub'>
+            <view>${{item.propsVal}}</view>
+            <view class='fontColor3'>共{{item.props}}件饰品</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='loading'></view>
+  </swiper-item>
+  <swiper-item > 
+    <view class='rollList' wx:for="{{roll4}}">
+      <view class='rollroom'>
+        <view>
+          <view class='photo'>
+            <image src="{{item.photo}}"></image>
+          </view>
+          <view class='name'>
+            <view class='player'>{{item.name}}</view>
+            <view class='timeout'>截止时间</view>
+          </view>
+          <view class='nub'>
+            <view class='roomnub'>
+              房间号: {{item.room}}
+              <view class='roomLock' hidden="{{!item.locked}}"></view>
+            </view>
+            <view class='time'>{{item.time}}</view>
+          </view>
+        </view>
+
+        <view>
+          <view class='img'>
+            <image src="{{item.propsImg[0]}}"></image>
+          </view>
+          <view class='img'>
+            <image src="{{item.propsImg[1]}}"></image>
+          </view>
+          <view class='img'>
+            <image src="{{item.propsImg[2]}}"></image>
+          </view>
+          <view class='img'>
+            <image src="{{item.propsImg[3]}}"></image>
+          </view>
+        </view>
+        
+        <view class='nubinfo'>
+          <view class='playerNub'>
+            <view>{{item.joined}}/{{item.total}} 人</view>
+            <view class='fontColor3'>已参与/上限人数</view>
+          </view>
+
+          <view class='propsNub'>
+            <view>${{item.propsVal}}</view>
+            <view class='fontColor3'>共{{item.props}}件饰品</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='loading'></view>
+  </swiper-item>
+</swiper>

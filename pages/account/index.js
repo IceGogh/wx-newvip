@@ -81,6 +81,14 @@ Page({
     })
   },
 
+  // 跳转到 [我的推荐]
+  jumpToMyEarning: function () {
+    wx.navigateTo({
+      url: 'myEarnings/index'
+    })
+  },
+
+
   /**
    * 生命周期函数--监听页面加载
    */

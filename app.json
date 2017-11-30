@@ -1,9 +1,10 @@
 {
   "pages":[
 
-    
-    "pages/match/index",
+    "pages/account/myEarnings/index",
     "pages/roll/index",
+    "pages/roll/createRm/index",
+    "pages/match/index",
     "pages/bag/index",
 
     "pages/login/index",
@@ -26,8 +27,7 @@
     "pages/account/msgDetail/index",
     "pages/account/messageCenter/index",
     "pages/account/reCharge/index",
-    "pages/account/myRecommend/index",
-    "pages/account/myEarnings/index"
+    "pages/account/myRecommend/index"
     
   ],
   "window": {
