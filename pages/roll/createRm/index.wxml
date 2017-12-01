@@ -50,14 +50,76 @@
     <view class='cancle fontColor4'>取消</view>
     <view class='next'>下一步</view>
   </view>
+
+
+
+
 </view>
 
-<!-- step2 房间信息完成 选择饰品  -->
-<view class='step2' hidden="{{  stepStatus === 1 ? false : true  }}">
-  <view class='header'>
-    <view class='in'>
-      已选ROLL饰品
-      <text>(共<span>{{propsSelNub}}</span>)，价值<span>{{propsSelVal}}</span></text>
+  <!-- step2 房间信息完成 选择饰品  -->
+  <view class='step2' hidden="{{  stepStatus === 1 ? false : true  }}">
+    <view class='header'>
+      <view class='in'>
+        已选ROLL饰品
+        <text>(共<span>{{propsSelNub}}</span>)，价值<span>{{propsSelVal}}</span></text>
+      </view>
+    </view> 
+
+    <view class='header2'>
+      <view class='{{ selH === 0 ? "selHeader2" : "" }}' bindtap='chooseSelH0'>DOTA2</view>
+      <view class='{{ selH === 1 ? "selHeader2" : "" }}' bindtap='chooseSelH1'>CSGO</view>
+    </view>
+    
+    <view class='orderBy'>
+      <view class='fontColor2' bindtap='orderByVal'>
+        价值 
+        <view class='value {{ orderByValue ? "value11" : "value1" }}'></view>
+        <view class='value {{ orderByValue ? "value22" : "value2" }}'></view>
+      </view>
+      <view class='fontColor2' bindtap='slidePort'>
+        筛选
+      <view class='choose'></view>
     </view>
   </view>
+
+
+    <view class='propsBox clearFloat'>
+      <view wx:for="{{props}}">
+        <image src="{{item.img}}"></image>
+        <view class='propsVal'>${{item.val}}</view>
+        <view class='selectProps' hidden='{{selectProp}}'></view>
+      </view>
+    </view>    
+
+
+  <view class='BtnArea'>
+    <view class='cancle fontColor4'>上一步</view>
+    <view class='next'>确定创建</view>
+  </view>
+
 </view>
+
+
+ <!-- 筛选滑层 -->
+ <view class='slidePort {{ slidePortStatus ? "" : "Show"}}'>
+  <view class='in {{ slidePortStatus ? "" : "Show"}}'>
+    <view class="title">{{channel[currentTab].title1}}</view>
+    <view class='channel'>
+      <view class='channelItem fontColor3 {{ channelSel === index ? "sel" : "" }}' data-ind="{{index}}" wx:for="{{channel[currentTab].item1}}" bindtap='ChooseChannelSel'>{{item}}</view>
+    </view>
+
+    <view class='line' hidden='{{ currentTab === 2 }}'></view>
+
+    <view class="title" hidden='{{ currentTab === 2 }}'>收支类型</view>
+    <view class='channel'>
+      <view class='channelItem fontColor3 {{ getOrPay === index ? "sel" : "" }}' data-ind="{{index}}" wx:for="{{channel[currentTab].item2}}" bindtap='ChooseGetOrPay'>{{item}}</view>
+    </view>
+
+    <view class='op'>
+      <view class='reset fontColor3' bindtap='resetChoose'>重置</view>
+      <view class='confirm' bindtap='confirm'>完成</view>
+    </view>
+
+  </view>
+</view> 
+

@@ -5,7 +5,7 @@
   <view class="eyes {{ keyInVerify ? 'eyes2' : '' }}"></view>
 </view>
 <view class='keyin code'>
-  <input type="password" placeholder='验证码'/>
+  <input type="number" placeholder='验证码' bindinput='keyInCode'/>
   <view class='getCode {{ getCodeStatus ? "getCodeFalse" : "getCodeTure" }}' bindtap="getCoding">
     {{getCode}}
     <view class="fontGold" hidden="{{getCodeStatus}}">s</view>

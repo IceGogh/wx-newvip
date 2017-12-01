@@ -1,3 +1,5 @@
+var globalInfo = getApp();
+var defineUrl = globalInfo.globalData.defineUrl;
 // pages/login/regist/index.js
 Page({
 
@@ -49,6 +51,15 @@ Page({
         getCodeStatus: false,
         getCode: Sec
       })
+      
+      // 调用接口 获取验证码
+      wx.request({
+        url: "https://account." + defineUrl + ".com/server/Account?act=regCode&mobile=" + t.data.uid,
+        success: function(e){
+          console.log(e)
+        }
+      })
+
       let Timer = setInterval(function(){
         if( Sec > 0){
           Sec --;
@@ -63,6 +74,14 @@ Page({
         }
       }, 1000)
     }
+  },
+
+  // keyInCode 输入验证码
+  keyInCode: function(e){
+    let Code = e.detail.value;
+    this.setData({
+      code: Code
+    })
   },
 
   // keyPw 密码
@@ -106,6 +125,7 @@ Page({
     // 资料合法性验证拦截
     if (t.data.keyInVerify && t.data.pwChk2){
       // 执行回调
+
     }else{
       t.setData({
         alertFlag: true
@@ -119,6 +139,34 @@ Page({
     }
   },
 
+  //  回调 [注册]
+  signing: function(){
+    let t = this;
+    // console.log(Number(t.data.code), typeof Number(t.data.uid));
+    // return false;
+    wx.request({
+      url: "https://account." + defineUrl + ".com/server/Account",
+      data: {
+        "act": "regByMobile",
+        "mobile": Number(t.data.uid),
+        "code": Number(t.data.code),
+        "passwd": t.data.password2,
+        "friend": "00000000",
+        "nickName": "",
+        "random": 76
+      },
+      success: function(e){
+        console.log(e)
+        console.log("act"+ "regByMobile",
+          "mobile"+ Number(t.data.uid),
+          "code"+ Number(t.data.code),
+          "passwd"+ t.data.password2,
+          "friend"+ "00000000",
+          "nickName"+ "",
+          "random"+ 37)
+      }
+    })
+  },
   // goBack 返回登录
   goBack: function () {
     wx.navigateBack({
@@ -130,7 +178,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
   },
 
   /**

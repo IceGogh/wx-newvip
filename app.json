@@ -1,14 +1,13 @@
 {
   "pages":[
-
+    
+    "pages/login/regist/index",
     "pages/roll/createRm/index",
     "pages/roll/index",
     
     "pages/match/index",
     "pages/bag/index",
-
     "pages/login/index",
-    "pages/login/regist/index",
     "pages/login/forgotPw/index",
     "pages/login/lgFromPC/index",
      

@@ -1,3 +1,4 @@
+
 //app.js
 App({
 
@@ -37,7 +38,8 @@ App({
 
   globalData: {
     userInfo: null,
-    cc: '2223'
+    cc: '123123',
+    defineUrl: 'steampp'
   }
   
 })
