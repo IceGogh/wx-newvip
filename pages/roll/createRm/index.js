@@ -5,14 +5,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    stepStatus: 1
+  },
+
+
+  // goBack 返回
+  goBack: function () {
+    wx.navigateBack({
+      url: ''
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+
+    wx.request({
+      url: "https://account.vipgame.com/server/Inventory/?julJson=55280&act=getRobot&appid=570_2",
+      success: function (e) {
+        console.log( e)
+      }
+    })  
   },
 
   /**

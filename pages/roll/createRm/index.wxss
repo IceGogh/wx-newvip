@@ -139,3 +139,25 @@ page {
   line-height: 97rpx;
   float: left;
 }
+
+.header {
+  width: 100%;
+  background: #fff;
+}
+
+.header .in{
+  width: 92%;
+  height: 97rpx;
+  line-height: 97rpx;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.header .in text {
+  font-size: 28rpx;
+  color: #5d6069;
+}
+
+.header .in span {
+  color: #ef6a0d;
+}

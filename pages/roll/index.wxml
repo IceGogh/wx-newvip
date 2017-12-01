@@ -3,7 +3,7 @@
     <input type="text" placeholder='输入房间号搜索'/>
     <view></view>
   </view>
-  <view class='createRoom'>+</view>
+  <view class='createRoom' bindtap='jumpToCreateRm'>+</view>
 </view>
 <view class='roll'>
   <view class='{{ currentTab === 0 ? "selectList" : ""}}' data-tab="0" bindtap='selTab'>官方ROLL</view>

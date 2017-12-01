@@ -208,6 +208,13 @@ Page({
     })
   },
 
+
+  // 跳转到 [创建房间] jumpToCreateRm
+  jumpToCreateRm: function(){
+    wx.navigateTo({
+      url: 'createRm/index',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
