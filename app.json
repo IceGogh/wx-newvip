@@ -1,15 +1,17 @@
 {
   "pages":[
-    
-    "pages/login/regist/index",
-    "pages/roll/createRm/index",
+
     "pages/roll/index",
-    
+    "pages/roll/createRm/index",
+    "pages/roll/RmDetail/index",
+
+
     "pages/match/index",
     "pages/bag/index",
     "pages/login/index",
     "pages/login/forgotPw/index",
     "pages/login/lgFromPC/index",
+    "pages/login/regist/index",
      
     "pages/account/index",
     "pages/account/accountSetting/index",

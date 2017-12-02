@@ -1,0 +1,275 @@
+<view class="common-header">
+    <view class='backBtn' bindtap='goBack'></view>
+    房间号: {{roomNub}}
+  </view>
+  <view class='headerBg'></view>
+
+  <view class='roomInfo'>
+    <view class='photo'>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171009/X00068F9.jpg">头像</image>
+      <view>heytoo</view>
+    </view>
+    <view class='link'>
+      <view class='tv'>直播</view>
+      <view class='weibo'>微博</view>
+    </view>
+</view>
+
+<view class='timeRemain'>
+  <view class='in'>
+    <view class='fontColor3'>截止时间</view>
+    <view class='fontColor2'>{{timeRemain}}11111</view>
+  </view>
+  <view class='btn'>
+    <view class='changeInfo' bindtap='openChangeRoomInfo'>修改信息</view>
+    <view class='rightNow'>立即开奖</view>
+    <view class='closed'>已结束</view>
+  </view>
+</view>
+
+<view class='note'>
+  <view class='title'>ROLL说明</view>
+  <view class='in'>{{note}}ROLL键盘的密码在我微博里面，大家关注我的微博会有不定期的ROLL奖品活动</view>
+</view>
+
+<!-- 奖品池  -->
+<view class='propsBox'>
+  <view class='title'>
+    奖品池（共<span>{{propsNub}}20</span>件，价值<span>${{propVal}}2000</span>）
+    <view>中奖人数: <span>{{winnerNub}}10</span>人</view>
+  </view>
+  <view class='propList clearFloat overfl'>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005BVM.png"></image>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005BVM.png"></image>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005BVM.png"></image>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005BVM.png"></image>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005BVM.png"></image>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005BVM.png"></image>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005BVM.png"></image>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005BVM.png"></image>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005BVM.png"></image>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005BVM.png"></image>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005BVM.png"></image>
+    </view>
+  </view>
+  <view class='loadMore'></view>
+</view>
+
+<!-- 获奖用户  -->
+<view class='winnerList note'>
+  <view class='title'>获奖用户</view>
+  <view class='winnerListBox'>
+    <view class='winnerInfo clearFloat'>
+      <view class='photo'>
+        <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171009/X00068F9.jpg"></image>
+      </view>
+      <view class='winProps'>
+        <view class='title'>
+          <view class='fontColor3'>{{winName}}heytoo</view>
+          <view>{{winPropVal}}winPropVal500</view>
+        </view>
+
+
+
+        <view class='props'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C6Q.png"></image>
+        </view>
+        <view class='props'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C6Q.png"></image>
+        </view>
+        <view class='props'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C6Q.png"></image>
+        </view>
+        <view class='props'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C6Q.png"></image>
+        </view>
+        <view class='props'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C6Q.png"></image>
+        </view>
+        <view class='props'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C6Q.png"></image>
+        </view>
+        <view class='props'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C6Q.png"></image>
+        </view>
+        <view class='props'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C6Q.png"></image>
+        </view>
+        <view class='props'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C6Q.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class='winnerInfo clearFloat'>
+      <view class='photo'>
+        <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171009/X00068F9.jpg"></image>
+      </view>
+      <view class='winProps'>
+        <view class='title'>
+          <view class='fontColor3'>{{winName}}heytoo</view>
+          <view>{{winPropVal}}winPropVal500</view>
+        </view>
+
+
+
+        <view class='props'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C6Q.png"></image>
+        </view>
+        <view class='props'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C6Q.png"></image>
+        </view>
+        <view class='props'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C6Q.png"></image>
+        </view>
+        <view class='props'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C6Q.png"></image>
+        </view>
+        <view class='props'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C6Q.png"></image>
+        </view>
+        <view class='props'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C6Q.png"></image>
+        </view>
+        <view class='props'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C6Q.png"></image>
+        </view>
+        <view class='props'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C6Q.png"></image>
+        </view>
+        <view class='props'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C6Q.png"></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='loadMore'></view>
+  </view>
+</view>
+
+<!-- 参与玩家  -->
+<view class='playerList note'>
+  <view class='title'>参与玩家( {{joinedNub}}22/{{totalNub}}200 )</view>
+  <view class='joinedList clearFloat'>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171021/X00068VA.jpeg"></image>
+      <view class='overfl textOverfl'>{{joinedName}}参与玩家的名字</view>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171021/X00068VA.jpeg"></image>
+      <view class='overfl textOverfl'>{{joinedName}}参与玩家的名字</view>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171021/X00068VA.jpeg"></image>
+      <view class='overfl textOverfl'>{{joinedName}}参与玩家的名字</view>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171021/X00068VA.jpeg"></image>
+      <view class='overfl textOverfl'>{{joinedName}}参与玩家的名字</view>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171021/X00068VA.jpeg"></image>
+      <view class='overfl textOverfl'>{{joinedName}}参与玩家的名字</view>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171021/X00068VA.jpeg"></image>
+      <view class='overfl textOverfl'>{{joinedName}}参与玩家的名字</view>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171021/X00068VA.jpeg"></image>
+      <view class='overfl textOverfl'>{{joinedName}}参与玩家的名字</view>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171021/X00068VA.jpeg"></image>
+      <view class='overfl textOverfl'>{{joinedName}}参与玩家的名字</view>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171021/X00068VA.jpeg"></image>
+      <view class='overfl textOverfl'>{{joinedName}}参与玩家的名字</view>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171021/X00068VA.jpeg"></image>
+      <view class='overfl textOverfl'>{{joinedName}}参与玩家的名字</view>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171021/X00068VA.jpeg"></image>
+      <view class='overfl textOverfl'>{{joinedName}}参与玩家的名字</view>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171021/X00068VA.jpeg"></image>
+      <view class='overfl textOverfl'>{{joinedName}}参与玩家的名字</view>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171021/X00068VA.jpeg"></image>
+      <view class='overfl textOverfl'>{{joinedName}}参与玩家的名字</view>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171021/X00068VA.jpeg"></image>
+      <view class='overfl textOverfl'>{{joinedName}}参与玩家的名字</view>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171021/X00068VA.jpeg"></image>
+      <view class='overfl textOverfl'>{{joinedName}}参与玩家的名字</view>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171021/X00068VA.jpeg"></image>
+      <view class='overfl textOverfl'>{{joinedName}}参与玩家的名字</view>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171021/X00068VA.jpeg"></image>
+      <view class='overfl textOverfl'>{{joinedName}}参与玩家的名字</view>
+    </view>
+    <view>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171021/X00068VA.jpeg"></image>
+      <view class='overfl textOverfl'>{{joinedName}}参与玩家的名字</view>
+    </view>
+
+
+
+  </view>
+  <view class='loadMore'></view>
+</view>
+
+
+<!-- 修改房间信息  -->
+<view class='changeRoomInfo' hidden='{{!changeRoomInfo}}'>
+  <view class='in'>
+    <view class='photo'>
+      <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171009/X00068F9.jpg">头像</image>
+      <view>heytoo</view>
+      <view class='close' bindtap='closeChangeRoomInfo'></view>
+    </view>
+
+    <view class='lin'>
+      中奖人数
+      <input type='number' placeholder='修改中奖人数' ></input>
+    </view>
+    <view class='lin'>
+      房间密码
+      <input type='text'  placeholder='修改房间密码' ></input>
+    </view>
+    <view class='confirm'>
+      <view>确认修改</view>
+    </view>
+  </view>
+</view>

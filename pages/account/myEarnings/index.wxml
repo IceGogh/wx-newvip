@@ -25,8 +25,8 @@
 
 <view class='title'>
   <view class='in'>
-    竞猜
-    <view class='recorde'>竞猜记录</view>
+    预测
+    <view class='recorde'>预测记录</view>
   </view>
 </view>
 
@@ -36,7 +36,7 @@
       <view class='rateBase'>
         <view class='rateData'>
           <view>{{ rateData['week'].rate }}<span>%</span></view>
-          <view>周竞猜胜率</view>
+          <view>周预测胜率</view>
         </view>
 
 
@@ -50,29 +50,29 @@
     <view class='emLine emLine1'>
       <view class='em'>
         <view class='colorRed'>{{ rateData.week.times }}</view>
-        <view class='fontColor3'>周竞猜次数</view>
+        <view class='fontColor3'>周预测次数</view>
       </view>
       <view class='em em2'>
         <view class='colorRed'>{{ rateData.week.goldEarnings }}</view>
-        <view class='fontColor3'>竞猜赏金收益</view>
+        <view class='fontColor3'>预测赏金收益</view>
       </view>
       <view class='em'>
         <view class='colorRed'>{{ rateData.week.propsEarnings }}</view>
-        <view class='fontColor3'>竞猜饰品收益</view>
+        <view class='fontColor3'>预测饰品收益</view>
       </view>
     </view>
     <view class='emLine'>
       <view class='em'>
         <view class='colorRed'>{{ rateData.week.winTime }}</view>
-        <view class='fontColor3'>周竞猜次数</view>
+        <view class='fontColor3'>周预测次数</view>
       </view>
       <view class='em em2'>
         <view class='colorRed'>{{ rateData.week.winBonus }}</view>
-        <view class='fontColor3'>竞猜赏金收益</view>
+        <view class='fontColor3'>预测赏金收益</view>
       </view>
       <view class='em'>
         <view class='colorRed'>{{ rateData.week.rebate }}</view>
-        <view class='fontColor3'>竞猜饰品收益</view>
+        <view class='fontColor3'>预测饰品收益</view>
       </view>
     </view>
       
@@ -83,7 +83,7 @@
       <view class='rateBase'>
         <view class='rateData'>
           <view>{{ rateData['total'].rate }}<span>%</span></view>
-          <view>总竞猜胜率</view>
+          <view>总预测胜率</view>
         </view>
 
 
@@ -97,29 +97,29 @@
     <view class='emLine emLine1'>
       <view class='em'>
         <view class='colorRed'>{{ rateData.total.times }}</view>
-        <view class='fontColor3'>竞猜总次数</view>
+        <view class='fontColor3'>预测总次数</view>
       </view>
       <view class='em em2'>
         <view class='colorRed'>{{ rateData.total.goldEarnings }}</view>
-        <view class='fontColor3'>竞猜赏金总收益</view>
+        <view class='fontColor3'>预测赏金总收益</view>
       </view>
       <view class='em'>
         <view class='colorRed'>{{ rateData.total.propsEarnings }}</view>
-        <view class='fontColor3'>竞猜饰品总收益</view>
+        <view class='fontColor3'>预测饰品总收益</view>
       </view>
     </view>
     <view class='emLine'>
       <view class='em'>
         <view class='colorRed'>{{ rateData.total.winTime }}</view>
-        <view class='fontColor3'>竞猜总次数</view>
+        <view class='fontColor3'>预测总次数</view>
       </view>
       <view class='em em2'>
         <view class='colorRed'>{{ rateData.total.winBonus }}</view>
-        <view class='fontColor3'>竞猜赏金总收益</view>
+        <view class='fontColor3'>预测赏金总收益</view>
       </view>
       <view class='em'>
         <view class='colorRed'>{{ rateData.total.rebate }}</view>
-        <view class='fontColor3'>竞猜饰品总收益</view>
+        <view class='fontColor3'>预测饰品总收益</view>
       </view>
     </view>
       

@@ -42,7 +42,7 @@
     <view class='itemIn fontColor2' bindtap='jumpToMyEarning'>我的收益</view>
   </view>
   <view class='item'>
-    <view class='itemIn fontColor2'>我的竞猜</view>
+    <view class='itemIn fontColor2'>我的预测</view>
   </view>
   <view class='item'>
     <view class='itemIn fontColor2' bindtap='jumpToMyRecommend'>我的推荐</view>

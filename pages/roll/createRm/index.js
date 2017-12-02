@@ -5,12 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    stepStatus: 1,
+    stepStatus: 0,
     selH: 0,
     appid: "570_2",
     slidePortStatus: true,
     orderByValue: false,
     slidePortStatus: true,
+    selectProps: [],
+
     props: [
       {
         "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
@@ -43,8 +45,123 @@ Page({
       {
         "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
         "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
+      },
+      {
+        "img": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057R3.png",
+        "val": 380.00
       }
-    ]
+    ],
+    
+    selectIt: {
+      "0": {
+        "title": "稀有度",
+        "kind": [
+          "不限", "普通", "罕见", "稀有", "神话", "不朽", "传说", "至宝"
+        ]
+      },
+      "1": {
+        "title": "类型",
+        "kind": [
+          "不限", "手枪", "重型武器", "微信冲锋枪", "步枪", "匕首", "手套", "其他"
+        ]
+      }
+    },
+    selectKind: {
+      "0": 0,
+      "1": 0
+    }
   },
 
   // 选择 [DOTA2]
@@ -58,6 +175,46 @@ Page({
   chooseSelH1: function () {
     this.setData({
       selH: 1
+    })
+  },
+
+  // 选中 [饰品] selectProps
+  selectProps: function(e){
+    let Ind = e.currentTarget.dataset.ind
+      , Arr = this.data.selectProps;
+    // 根据数组中 下标元素的 True/ False 判断
+    
+    Arr[Ind] = !Arr[Ind];
+    this.setData({
+      selectProps: Arr
+    })
+  },
+
+  // 筛选 -> 选中类别 selectKind
+  selectKind: function(e){
+    let Ind = e.currentTarget.dataset.ind;
+    if (this.data.selH === 0 ){
+      this.setData({
+        selectKind: {
+          '0': Ind,
+          '1': 0
+        }
+      })
+    } else if (this.data.selH === 1){
+      this.setData({
+        selectKind: {
+          '0': 0,
+          '1': Ind
+        }
+      })
+    }
+  },
+
+  // 滑动 swiperSelH
+  swiperSelH: function(e){
+    let sel = e.detail.current;
+    this.setData({
+      selH: sel
     })
   },
 
@@ -112,6 +269,29 @@ Page({
     }
   },
 
+  // toStep1  步骤1
+  toStep1: function () {
+    this.setData({
+      stepStatus: 1
+    })
+  },
+
+  // toStep0  步骤0
+  toStep0: function () {
+    this.setData({
+      stepStatus: 0
+    })
+  },
+
+  // 创建房间
+  createRoom: function(){
+    // 验证所有信息合法性 然后跳转 新建的房间页面
+    
+    wx.navigateTo({
+      url: "../RmDetail/index"
+    })
+
+  },
 
   // slidePort 打开 筛选 侧边栏
   slidePort: function () {
@@ -128,27 +308,14 @@ Page({
     })
   },
 
-  // ChooseChannelSel 筛选 -> 选择不同渠道
-  ChooseChannelSel: function (e) {
-    let selectVal = e.currentTarget.dataset.ind;
-    this.setData({
-      channelSel: selectVal
-    })
-  },
-
-  // ChooseGetOrPay 筛选 -> 选择收支类型
-  ChooseGetOrPay: function (e) {
-    let selectVal = e.currentTarget.dataset.ind;
-    this.setData({
-      getOrPay: selectVal
-    })
-  },
 
   // resetChoose 重置 筛选条件
   resetChoose: function () {
     this.setData({
-      channelSel: 0,
-      getOrPay: 0
+      selectKind: {
+        '0': 0,
+        '1': 0
+      }
     })
   },
 

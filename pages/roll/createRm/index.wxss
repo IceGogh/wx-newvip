@@ -113,6 +113,11 @@ page {
   text-align: left;
 }
 
+swiper {
+  height: 730rpx;
+}
+
+
 
 .BtnArea {
   width: 100%;
@@ -121,6 +126,7 @@ page {
   bottom: 0;
   left: 0;
   font-size: 30rpx;
+  z-index: 300;
 }
 
 .BtnArea .cancle {
@@ -143,6 +149,9 @@ page {
 .header {
   width: 100%;
   background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .header .in{
@@ -165,6 +174,9 @@ page {
 .header2 {
   width: 100%;
   height: 90rpx;
+  position: fixed;
+  top: 97rpx;
+  left: 0;
 }
 
 .header2 > view{
@@ -172,31 +184,26 @@ page {
   float: left;
   height: 90rpx;
   line-height: 90rpx; 
-  position: relative;
   background: #fff;
-  border-bottom: 2rpx solid #edf2f5;
+  border-bottom: 2rpx solid #edf2f5; 
 }
 
 .header2 .selHeader2{
   color: #ffc63f;
 }
 
-.header2 .selHeader2::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4rpx;
-  background: #ffc63f;
-}
+ .header2 .selHeader2 {
+  border-bottom: 2rpx solid #ffc63f;
+} 
 
 .propsBox {
   width: 685rpx;
-  margin: 0 auto;
+  height: 730rpx;
+  margin: 310rpx auto 0;
+  position: relative;
 }
 
-.propsBox > view {
+.propsBox .scro {
   width: 160rpx;
   height: 107rpx;
   margin: 0 15rpx 16rpx 0;
@@ -204,7 +211,7 @@ page {
   position: relative;
 }
 
-.propsBox > view:nth-of-type(4n){
+.propsBox .scro:nth-of-type(4n){
   margin-right: 0;
 }
 
@@ -224,9 +231,9 @@ page {
   height: 0;
   border-bottom: 40rpx solid rgba(211, 170, 81, .7);
   border-right: 140rpx solid transparent;
-  z-index: 100;
+  z-index: 20;
   font-size: 22rpx;
-  line-height: 50rpx;
+  line-height: 48rpx;
   color: #fff;
 }
 
@@ -239,7 +246,17 @@ page {
   background: url(https://vip-account.oss-cn-hangzhou.aliyuncs.com/mobile/static/account/My_bag/images/suo.png) no-repeat center center;
   background-size: 36rpx;
   background-color: rgba(10, 10, 10, .4);
-  z-index: 200;
+  z-index: 50;
+}
+
+.loading {
+  position: absolute;
+  bottom: -40rpx;
+  left: 0;
+  width: 100%;
+  height: 40rpx;
+  background: url(https://match.steampp.com/mobile/static/wx/roll/loading.gif) no-repeat center center;
+  background-size: 30rpx;
 }
 
 
@@ -279,6 +296,9 @@ page {
   width: 100%;
   height: 76rpx;
   background: #fff;
+  position: fixed;
+  top: 187rpx;
+  left: 0;
 }
 
 .orderBy > view {
@@ -335,7 +355,7 @@ page {
   width: 100%;
   height: 100%;
   background: rgba(10, 10 , 10, 0.6);
-  z-index: 20;
+  z-index: 320;
 }
 
 .slidePort .in {
@@ -348,45 +368,37 @@ page {
   transition: all .5s;
 }
 
-.Show {
-  right: 0!important;
-}
-
-.slidePort .in .title {
-  width: 100%;
-  height: 87rpx;
-  line-height: 87rpx;
+.slidePort .in .title1 {
+  height: 190rpx;
+  line-height: 190rpx;
+  text-indent: 40rpx;
   text-align: left;
-  text-indent: 21rpx;
-  margin-left: 28rpx;
-  margin-top: 28rpx;
 }
 
-.channel{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; 
+.slidePort .in  .selectIt {
+  width: 94%;
+  margin: 0 auto;
 }
 
-.channelItem {
+.slidePort .in  .selectIt > view {
   width: 187rpx;
   height: 56rpx;
   line-height: 56rpx;
-  background: #f0f2f5;
+  background: #f1f2f6;
   border-radius: 28rpx;
-  margin: 20rpx 0 ;
+  margin: 0 8rpx 41rpx;
+  float: left;
+  font-size: 30rpx;
+  color: #5d6069;
 }
 
-.channel .sel {
-  background: #ffc63f;
+.slidePort .in  .selectIt .selectKind {
+  background: #ffc640;
   color: #fff;
 }
 
-.line {
-  width: 100%;
-  height: .7rpx;
-  background: #f0f2f5;
-  margin-top: 40rpx;
+.Show {
+  right: 0!important;
 }
 
 .op {

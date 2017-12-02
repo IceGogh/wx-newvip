@@ -13,7 +13,7 @@
 
 <view class='table'>
   <view class='tb clearFloat'>
-    <view class="td td0">竞猜总量</view>
+    <view class="td td0">预测总量</view>
     <view class="td td1">
       <view>$100</view>
       <view>(500赏金)</view>
@@ -52,7 +52,7 @@
     <view class='th fontColor3 clearFloat'>
       <view>　时间</view>
       <view>好友账号</view>
-      <view>　竞猜总量</view>
+      <view>　预测总量</view>
       <view class='bonus'>招募福利</view>
     </view>
     <view class='th th1 clearFloat' wx:for="{{ recommendData }}">
